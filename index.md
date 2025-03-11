@@ -1,6 +1,7 @@
 ---
 layout: homepage
 ---
+<div class="justify-text">
 <h1 id="about-me">About Me</h1>
 
 <h2 style="margin: 80px 0px 10px;"></h2>
@@ -16,3 +17,4 @@ My work includes the development of innovative Quantum Long Short-Term Memory (Q
 {% include_relative _includes/news.md %}
 
 {% include_relative _includes/contact.md %}
+</div>
