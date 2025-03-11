@@ -5,7 +5,7 @@ layout: homepage
 
 <h2 style="margin: 80px 0px 10px;"></h2>
 
-I am a Ph.D. Candidate in the [School of Electrical and Computer Engineering](https://ece.gatech.edu/) at the [Georgia Institute of Technology](https://www.gatech.edu/) in Atlanta, advised by [Dr. Saibal Mukhopadhyay](https://ece.gatech.edu/people/saibal-mukhopadhyay). My research focuses on developing simulation frameworks and design tools for quantum sensors aimed at low-power and precision-based applications. Currently, I am exploring controlled feedback-based quantum tomography techniques to enhance quantum state preparation, thereby improving the performance of quantum photonic sensors.
+I am a Ph.D. Candidate in the [School of Electrical and Computer Engineering](https://ece.gatech.edu/) at the [Georgia Institute of Technology](https://www.gatech.edu/) in Atlanta, advised by [Dr. Saibal Mukhopadhyay](https://ece.gatech.edu/people/saibal-mukhopadhyay). My research focuses on developing simulation frameworks and design tools for quantum sensors aimed at low-power and precision-based applications. Currently, I am exploring controlled feedback-based quantum tomography techniques to enhance quantum state preparation, thereby improving the performance of quantum photonic sensors. Hello
 
 <h2 style="margin: 80px 0px 10px;">Research Interests</h2>
 
