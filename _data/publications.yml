@@ -1,17 +1,17 @@
 main:
 
-  - title: Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting
+  - title: "Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting"
     authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Dibyarup Dutta, Udayon Sen, Pathikrit Syam, Sandipan Dhar
     conference_short: IJCCI
     conference: 15th International Joint Conference on Computational Intelligence <strong>(ECTA)</strong>, 2023.
     bibtex: https://bib.yliu.me/CVPR25.txt
     image: https://img.yliu.me/teaser/CVPR2025.png
 
-  - title: "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding"
-    authors: Wufei Ma, Guofeng Zhang, Qihao Liu, Guanning Zeng, Adam Kortylewski, <strong>Yaoyao Liu</strong>, Alan Yuille
-    conference_short: NeurIPS
-    conference: NeurIPS 2024 Datasets and Benchmarks Track.
-    pdf: https://yaoyaoliu.web.illinois.edu/papers/ImageNet3D_Towards_General_Purpose_Object_Level_3D_Understanding.pdf
+  - title: "QGAPHnet: Quantum Genetic Algorithm Based Hybrid QLSTM Model for Soil Moisture Estimation"
+    authors: Sujith Sai,  <strong>Anuvab Sen</strong>, Chhandak Mallick, Aakash Mallik, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Subhabrata Roy
+    conference_short: IGARSS
+    conference: IGARSS 2024 /IEEE International Geoscience and Remote Sensing Symposium
+    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10641651
     bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
     data: https://github.com/wufeim/imagenet3d
     page: https://imagenet3d.github.io/
