@@ -26,7 +26,7 @@ twitter: https://twitter.com/AnuvabSen10/
 baseurl: "/anuvab_._sen"
 
 # Images 
-avatar: assets/img/Anuvab_Sen1.jpeg
+avatar: "/assets/img/Anuvab_Sen1.jpeg"
 
 # Footnotes
 footnote: Feel free to use my website's source code.
