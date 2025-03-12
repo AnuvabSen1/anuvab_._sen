@@ -23,9 +23,10 @@ google_scholar: https://scholar.google.com/citations?user=aQkZOqQAAAAJ
 github_link: https://github.com/AnuvabSen1/
 linkedin: https://www.linkedin.com/in/anuvabsen/
 twitter: https://twitter.com/AnuvabSen10/
+baseurl: "/anuvab_._sen"
 
 # Images 
-avatar: /assets/img/Anuvab_Sen1.jpeg
+avatar: assets/img/Anuvab_Sen1.jpeg
 
 # Footnotes
 footnote: Feel free to use my website's source code.
