@@ -19,13 +19,13 @@ enable_last_update: false
 
 # Links
 link_type: icon #text/icon
-google_scholar: https://scholar.google.com/citations?user=Qi2PSmEAAAAJ
-github_link: https://github.com/yaoyao-liu/
-linkedin: https://www.linkedin.com/in/liuyaoyao/
-twitter: https://twitter.com/YaoyaoLiu1/
+google_scholar: https://scholar.google.com/citations?user=aQkZOqQAAAAJ
+github_link: https://github.com/AnuvabSen1/
+linkedin: https://www.linkedin.com/in/anuvabsen/
+twitter: https://twitter.com/AnuvabSen10/
 
 # Images 
-avatar: https://img.yliu.me/avatar_new.jpg
+avatar: ./assets/img/Anuvab_Sen1.jpeg
 
 # Footnotes
 footnote: Feel free to use my website's source code.
