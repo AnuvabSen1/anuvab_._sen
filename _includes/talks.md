@@ -13,5 +13,5 @@
 <h4 style="margin:0 10px 0;">Quantum-Enhanced Hybrid Systems for Complex Data Interpretation</h4>
 
 <ul style="margin:0 0 5px;">
-  <li>CVPR 2024 Area Chair Workshop, June 2024.</li>
+  <li>Quantum Computing Theory in Practice, Berlin, April 2025.</li>
 </ul>
