@@ -6,7 +6,9 @@ layout: homepage
 
 <h2 style="margin: 80px 0px 10px;"></h2>
 
+<div class="justify-text">
 I am a Ph.D. Candidate in the <a href="https://ece.gatech.edu/">School of Electrical and Computer Engineering</a> at the <a href="https://www.gatech.edu/">Georgia Institute of Technology</a> in Atlanta, advised by <a href="https://ece.gatech.edu/people/saibal-mukhopadhyay">Dr. Saibal Mukhopadhyay</a>. My research focuses on developing simulation frameworks and design tools for quantum sensors aimed at low-power and precision-based applications. Currently, I am exploring controlled feedback-based quantum tomography techniques to enhance quantum state preparation, thereby improving the performance of quantum photonic sensors. I have integrated metaheuristic algorithms with the Quantum Approximate Optimization Algorithm (QAOA) and benchmarked the outcomes against quantum annealing methods. These findings were presented at the <a href="https://qip2024.tw/">Quantum Information Processing (QIP) 2024 Conference</a> in Taipei and the <a href="https://saiconference.com/Computing">Science and Information Conference</a> in London.
+</div>
 
 My work includes the development of innovative Quantum Long Short-Term Memory (QLSTM) and Quantum Vision Transformer (Quantum ViT) models for applications in healthcare and security. I have also implemented novel quantum-based heuristic algorithms to optimize these model parameters. My research has been featured in prominent journals and conferences, including <a href="https://www.igarss.org/">IGARSS</a>, <a href="https://www.ijcnn.org/">IJCNN</a>, <a href="https://www.ijcai.org/">IJCAI</a>, <a href="https://ieeessci2024.org/">SSCI</a>, <a href="https://ijcci.scitevents.org/">IJCCI</a>, <a href="https://www.springer.com/journal/11042">Multimedia Tools and Applications</a>, and <a href="https://www.springer.com/series/7092">Studies in Computational Intelligence</a>.
 
