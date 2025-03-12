@@ -35,11 +35,11 @@ main:
     bibtex: https://dblp.org/rec/journals/corr/abs-2407-09271.html?view=bibtex
     image: https://img.yliu.me/teaser/iNeMo.png
     
-  - title: Generating Images with 3D Annotations Using Diffusion Models
-    authors: Wufei Ma*, Qihao Liu*, Jiahao Wang*, Angtian Wang, Xiaoding Yuan, Yi Zhang, Zihao Xiao, Guofeng Zhang, Beijia Lu, Ruxiao Duan, Yongrui Qi, Adam Kortylewski, <strong>Yaoyao Liu<sup><i class="fa-regular fa-envelope fa-xs"></i></sup></strong>, Alan Yuille <br>( <sup><i class="fa-regular fa-envelope fa-xs"></i></sup> Corresponding author)
-    conference_short: ICLR
-    conference: International Conference on Learning Representations <strong>(ICLR)</strong>, 2024.
-    pdf: https://openreview.net/pdf?id=XlkN11Xj6J
+  - title: On the detection of Alzheimer’s disease using fuzzy logic based majority voter classifier
+    authors: Subhabrata Roy, Abhijit Chandra, <strong>Anuvab Sen</strong>
+    conference_short: MTA
+    conference: Multimedia Tools and Applications <strong>(MTA)</strong>, 2024.
+    pdf: https://link.springer.com/article/10.1007/s11042-022-13184-5
     code: https://github.com/wufeim/DST3D
     page: https://ccvl.jhu.edu/3D-DST/
     bibtex: https://dblp.org/rec/conf/iclr/MaLWWY0X0LDQK0Y24.html?view=bibtex
