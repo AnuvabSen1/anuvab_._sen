@@ -1,9 +1,9 @@
 <h2 style="margin: 60px 0px 10px;">Contact</h2>
 
-<p><strong>Mailing Address:</strong> 501 E. Daniel St., MC-493, Champaign, IL 61820-6211
+<p><strong>Mailing Address:</strong> 251 10th Street, NW, Atlanta, GA 30318
 <br />
-<strong>Office Location:</strong> <a href="https://maps.app.goo.gl/sTBLkKCDBaAD81eA9">Room 5125, 614 E. Daniel St.</a>
+<strong>Office Location:</strong> <a href="https://maps.app.goo.gl/sTBLkKCDBaAD81eA9">Room 3013, Klaus Computing Building</a>
 <br />
-<strong>Email:</strong> <email>lyy (at) illinois.edu</email>
+<strong>Email:</strong> <email>asen74 (at) gatech.edu</email>
 <br />
-<strong>Phone:</strong> (217) 300-0910</p>
+<strong>Phone:</strong> (404) 457-7952</p>
