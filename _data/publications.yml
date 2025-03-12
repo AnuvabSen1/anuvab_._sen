@@ -24,7 +24,7 @@ main:
     pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
     bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
     code: https://github.com/caiyuanhao1998/HDR-GS
-    image: https://img.yliu.me/teaser/hdr-gs.png
+    image: /anuvab_._sen/assets/img/quantum.pdf
 
   - title: "Differential Evolution Algorithm Based Hyperparameter Selection of Gated Recurrent Unit for Electrical Load Forecasting"
     authors: <strong>Anuvab Sen</strong>, Vedica Gupta, Chi Tang
