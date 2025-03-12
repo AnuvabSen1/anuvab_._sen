@@ -25,7 +25,7 @@ linkedin: https://www.linkedin.com/in/anuvabsen/
 twitter: https://twitter.com/AnuvabSen10/
 
 # Images 
-avatar: ./assets/img/Anuvab_Sen1.jpeg
+avatar: /assets/img/Anuvab_Sen1.jpeg
 
 # Footnotes
 footnote: Feel free to use my website's source code.
