@@ -157,7 +157,8 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
 
-/* Justified text class */
+
+
 .justify-text {
     text-align: justify;
     text-justify: inter-word;
@@ -165,6 +166,18 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
     font-size: inherit;
     color: inherit;
     line-height: inherit;
+}
+
+
+.justify-text-65 {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    width: 65%; 
+    margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
