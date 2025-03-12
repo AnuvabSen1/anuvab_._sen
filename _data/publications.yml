@@ -5,7 +5,7 @@ main:
     conference_short: IJCCI
     conference: 15th International Joint Conference on Computational Intelligence <strong>(ECTA)</strong>, 2023.
     bibtex: https://bib.yliu.me/CVPR25.txt
-    image: "assets/img/IJCCI.png"
+    image: /assets/img/IJCCI.png
 
   - title: "QGAPHnet: Quantum Genetic Algorithm Based Hybrid QLSTM Model for Soil Moisture Estimation"
     authors: Sujith Sai,  <strong>Anuvab Sen</strong>, Chhandak Mallick, Aakash Mallik, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Subhabrata Roy
