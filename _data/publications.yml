@@ -5,7 +5,7 @@ main:
     conference_short: IJCCI
     conference: 15th International Joint Conference on Computational Intelligence <strong>(ECTA)</strong>, 2023.
     bibtex: https://bib.yliu.me/CVPR25.txt
-    image: /anuvab_._sen/assets/img/IJCCI.png
+    image: /anuvab_._sen/assets/publications/IJCCI.png
 
   - title: "QGAPHnet: Quantum Genetic Algorithm Based Hybrid QLSTM Model for Soil Moisture Estimation"
     authors: Sujith Sai,  <strong>Anuvab Sen</strong>, Chhandak Mallick, Aakash Mallik, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Subhabrata Roy
@@ -15,7 +15,7 @@ main:
     bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
     data: https://github.com/wufeim/imagenet3d
     page: https://imagenet3d.github.io/
-    image: /anuvab_._sen/assets/img/QGAPHNET_IGARSS.png
+    image: /anuvab_._sen/assets/publications/QGAPHNET_IGARSS.png
 
   - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
@@ -24,7 +24,7 @@ main:
     pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
     bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
     code: https://github.com/caiyuanhao1998/HDR-GS
-    image: /anuvab_._sen/assets/img/quantum.pdf
+    image: /anuvab_._sen/assets/publications/quantum.png
 
   - title: "Differential Evolution Algorithm Based Hyperparameter Selection of Gated Recurrent Unit for Electrical Load Forecasting"
     authors: <strong>Anuvab Sen</strong>, Vedica Gupta, Chi Tang
@@ -33,7 +33,7 @@ main:
     pdf: https://www.eng.mcmaster.ca/app/uploads/2024/01/BRIC-Proceedings-2023-V3-1.pdf#page=5
     code: https://github.com/Fischer-Tom/iNeMo
     bibtex: https://dblp.org/rec/journals/corr/abs-2407-09271.html?view=bibtex
-    image: https://img.yliu.me/teaser/iNeMo.png
+    image: /anuvab_._sen/assets/publications/BRICS.png
     
   - title: On the detection of Alzheimer’s disease using fuzzy logic based majority voter classifier
     authors: Subhabrata Roy, Abhijit Chandra, <strong>Anuvab Sen</strong>
