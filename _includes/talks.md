@@ -2,7 +2,7 @@
 
 <h2 style="margin: 60px 0px 10px;">Invited Talks</h2>
 
-<div class="justify-text">
+<div class="justify-text-70">
 <h4 style="margin:0 10px 0;">Learning with 3D Generative Models.</h4>
 
 <ul style="margin:0 0 5px;">
