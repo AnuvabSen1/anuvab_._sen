@@ -15,7 +15,7 @@ main:
     bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
     data: https://github.com/wufeim/imagenet3d
     page: https://imagenet3d.github.io/
-    image: https://img.yliu.me/teaser/imagenet3d.png
+    image: /anuvab_._sen/assets/img/QGAPHNET_IGARSS.png
 
   - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
