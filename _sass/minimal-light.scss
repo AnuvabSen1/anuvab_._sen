@@ -153,4 +153,15 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
     line-height: inherit;
 }
 
+.justify-text-65 {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    width: 65%; 
+    margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */
