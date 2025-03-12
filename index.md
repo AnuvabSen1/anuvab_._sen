@@ -14,13 +14,13 @@ I am a Ph.D. Candidate in the <a href="https://ece.gatech.edu/">School of Electr
 My work includes the development of innovative Quantum Long Short-Term Memory (QLSTM) and Quantum Vision Transformer (Quantum ViT) models for applications in healthcare and security. I have also implemented novel quantum-based heuristic algorithms to optimize these model parameters. My research has been featured in prominent journals and conferences, including <a href="https://www.igarss.org/">IGARSS</a>, <a href="https://www.ijcnn.org/">IJCNN</a>, <a href="https://www.ijcai.org/">IJCAI</a>, <a href="https://ieeessci2024.org/">SSCI</a>, <a href="https://ijcci.scitevents.org/">IJCCI</a>, <a href="https://www.springer.com/journal/11042">Multimedia Tools and Applications</a>, and <a href="https://www.springer.com/series/7092">Studies in Computational Intelligence</a>.
 </div>
 
-<div class="justify-text">
+<div class="justify-text" style="margin-top: 1em;">
   
 <strong style="color:#e74d3c; font-weight:600">Looking ahead, my research will focus on hardware-classical hardware co-design for photonic quantum systems. My objective is to develop precise and energy-efficient sensing methods that leverage the capabilities of emerging quantum technologies. I aim to apply these skills in a dynamic research environment to solve challenging research problems.</strong>
 
 </div>
 
-<div class="justify-text">
+<div class="justify-text" style="margin-top: 1em;">
   
 <strong style="color:#e74d3c; font-weight:600">I am actively seeking collaborations and opportunities in the fields of quantum sensing, quantum machine learning, and hardware co-design. Please feel free to reach out to discuss potential research collaborations or opportunities.</strong>
 
