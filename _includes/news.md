@@ -1,5 +1,6 @@
 <h2 style="margin: 60px 0px 10px;">News</h2>
 
+<div class="justify-text">
 <ul>
 <li><strong>[Feb. 2025]</strong> Our paper about <a href="./publications">meta-learning</a> is accepted to <a href="https://cvpr.thecvf.com/">CVPR 2025</a>.</li>
 <li><strong>[Dec. 2024]</strong> I will serve as an Area Chair of <a href="https://icml.cc/Conferences/2025">ICML 2025</a> and <a href="https://www.auai.org/uai2025/">UAI 2025</a>.</li>
@@ -41,6 +42,7 @@
   <li><strong>[Feb. 2020]</strong> We will host the <a href="https://www.acmmmasia.org/2020/committee.html">ACM Multimedia Asia 2020</a> conference in Singapore!</li>
   <li><strong>[Sep. 2019]</strong> Our paper about <a href="https://papers.nips.cc/paper/2019/file/bf25356fd2a6e038f1a3a59c26687e80-Paper.pdf">few-shot learning</a> is accepted to <a href="https://nips.cc/Conferences/2019">NeurIPS 2019</a>.</li>
   <li><strong>[Mar. 2019]</strong> Our paper about <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Meta-Transfer_Learning_for_Few-Shot_Learning_CVPR_2019_paper.pdf">few-shot learning</a> is accepted to <a href="http://cvpr2019.thecvf.com/">CVPR 2019</a>.</li>
+</div>
 </div>
 
 </ul>
