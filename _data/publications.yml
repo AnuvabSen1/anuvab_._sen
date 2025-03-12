@@ -17,20 +17,20 @@ main:
     page: https://imagenet3d.github.io/
     image: https://img.yliu.me/teaser/imagenet3d.png
 
-  - title: "HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting"
-    authors: Yuanhao Cai, Zihao Xiao, Yixun Liang, Minghan Qin, Yulun Zhang, Xiaokang Yang, <strong>Yaoyao Liu</strong>, Alan Yuille
-    conference_short: NeurIPS
-    conference: Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2024.
-    pdf: https://www.cs.jhu.edu/~alanlab/Pubs24/cai2024hdr-gs.pdf
+  - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
+    authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
+    conference_short: SIC
+    conference: Science and Information Conference <strong>(SIC)</strong>, 2024.
+    pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
     bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
     code: https://github.com/caiyuanhao1998/HDR-GS
     image: https://img.yliu.me/teaser/hdr-gs.png
 
-  - title: "iNeMo: Incremental Neural Mesh Models for Robust Class-Incremental Learning"
-    authors: Tom Fischer, <strong>Yaoyao Liu</strong>, Artur Jesslen, Noor Ahmed, Prakhar Kaushik, Angtian Wang, Alan Yuille, Adam Kortylewski, Eddy Ilg
-    conference_short: ECCV
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2024.
-    pdf: https://www.cs.jhu.edu/~yyliu/preprints/iNeMo_Incremental_Neural_Mesh_Models_for_Robust_Class-Incremental_Learning.pdf
+  - title: "Differential Evolution Algorithm Based Hyperparameter Selection of Gated Recurrent Unit for Electrical Load Forecasting"
+    authors: <strong>Anuvab Sen</strong>, Vedica Gupta, Chi Tang
+    conference_short: BRICS
+    conference: Annual BRIC Symposium <strong>(BRICS)</strong>, 2023.
+    pdf: https://www.eng.mcmaster.ca/app/uploads/2024/01/BRIC-Proceedings-2023-V3-1.pdf#page=5
     code: https://github.com/Fischer-Tom/iNeMo
     bibtex: https://dblp.org/rec/journals/corr/abs-2407-09271.html?view=bibtex
     image: https://img.yliu.me/teaser/iNeMo.png
