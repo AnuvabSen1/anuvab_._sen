@@ -1,9 +1,9 @@
 main:
 
-  - title: Meta-Learning Hyperparameters for Foundation Model Adaptation in Remote-Sensing Imagery
-    authors: Zichen Tian, <strong>Yaoyao Liu</strong>, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2025.
+  - title: Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting
+    authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Dibyarup Dutta, Udayon Sen, Pathikrit Syam, Sandipan Dhar
+    conference_short: IJCCI
+    conference: 15th International Joint Conference on Computational Intelligence <strong>(ECTA)</strong>, 2023.
     bibtex: https://bib.yliu.me/CVPR25.txt
     image: https://img.yliu.me/teaser/CVPR2025.png
 
