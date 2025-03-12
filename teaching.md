@@ -15,8 +15,8 @@ permalink: /teaching/
       Spring 2025: <a href="https://bpb-us-e1.wpmucdn.com/sites.gatech.edu/dist/8/675/files/2024/12/Spring2025-ECE2806-AI-First-AI-Foundations-syllabus.pdf">AI First “AI Foundations”</a> (ECE-2806)
     </li>
     <li>
-      Fall 2024: <a href="https://sites.gatech.edu/mfml-fall-2023/">Mathematical Foundations of Machine Learning</a> 
-      (ECE-7750)
+      Fall 2024: <a href="https://sites.gatech.edu/mfml-fall-2023/">Mathematical Foundations of Machine Learning</a>
+      <div>(ECE-7750)</div>
     </li>
   </ul>
 </div>
