@@ -16,7 +16,6 @@ permalink: /teaching/
     </li>
     <li>
       Fall 2024: <a href="https://sites.gatech.edu/mfml-fall-2023/">Mathematical Foundations of Machine Learning</a>
-      <div>(ECE-7750)</div>
     </li>
   </ul>
 </div>
