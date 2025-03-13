@@ -1,5 +1,14 @@
 main:
 
+  - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
+    authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
+    conference_short: SIC
+    conference: Science and Information Conference <strong>(SIC)</strong>, 2024.
+    pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
+    bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
+    code: https://github.com/AnuvabSen1/QUBOs_QuantumC
+    image: /anuvab_._sen/assets/publications/quantum.png
+
   - title: "Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting"
     authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Dibyarup Dutta, Udayon Sen, Pathikrit Syam, Sandipan Dhar
     conference_short: IJCCI
@@ -13,26 +22,14 @@ main:
     conference: IGARSS 2024 /IEEE International Geoscience and Remote Sensing Symposium
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10641651
     bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
-    data: https://github.com/wufeim/imagenet3d
-    page: https://imagenet3d.github.io/
     image: /anuvab_._sen/assets/publications/QGAPHNET_IGARSS.png
-
-  - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
-    authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
-    conference_short: SIC
-    conference: Science and Information Conference <strong>(SIC)</strong>, 2024.
-    pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
-    bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
-    code: https://github.com/caiyuanhao1998/HDR-GS
-    image: /anuvab_._sen/assets/publications/quantum.png
 
   - title: "Differential Evolution Algorithm Based Hyperparameter Selection of Gated Recurrent Unit for Electrical Load Forecasting"
     authors: <strong>Anuvab Sen</strong>, Vedica Gupta, Chi Tang
     conference_short: BRICS
     conference: Annual BRIC Symposium <strong>(BRICS)</strong>, 2023.
     pdf: https://www.eng.mcmaster.ca/app/uploads/2024/01/BRIC-Proceedings-2023-V3-1.pdf#page=5
-    code: https://github.com/Fischer-Tom/iNeMo
-    bibtex: https://dblp.org/rec/journals/corr/abs-2407-09271.html?view=bibtex
+    bibtex: https://dblp.org/rec/conf/igarss/SaiSMMSPSR24.html?view=bibtex
     image: /anuvab_._sen/assets/publications/BRICS.png
     
   - title: On the detection of Alzheimer’s disease using fuzzy logic based majority voter classifier
@@ -40,20 +37,18 @@ main:
     conference_short: MTA
     conference: Multimedia Tools and Applications <strong>(MTA)</strong>, 2024.
     pdf: https://link.springer.com/article/10.1007/s11042-022-13184-5
-    code: https://github.com/wufeim/DST3D
-    page: https://ccvl.jhu.edu/3D-DST/
-    bibtex: https://dblp.org/rec/conf/iclr/MaLWWY0X0LDQK0Y24.html?view=bibtex
+    page: https://link.springer.com/article/10.1007/s11042-022-13184-5
+    bibtex: https://dblp.org/rec/journals/mta/RoyC22.html?view=bibtex
     image: https://img.yliu.me/teaser/dst.png
     notes: Spotlight
 
-  - title: "Wakening Past Concepts without Past Data: Class-Incremental Learning from Online Placebos"
-    authors: <strong>Yaoyao Liu</strong>, Yingying Li, Bernt Schiele, and Qianru Sun
-    conference_short: WACV
-    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2024.
-    pdf: https://openaccess.thecvf.com/content/WACV2024/papers/Liu_Wakening_Past_Concepts_Without_Past_Data_Class-Incremental_Learning_From_Online_WACV_2024_paper.pdf
-    code: https://github.com/yaoyao-liu/online-placebos
-    bibtex: https://dblp.org/rec/conf/wacv/0001LSS24.html?view=bibtex
-    image: https://img.yliu.me/placebos_wacv24.png
+  - title: "QGAPHEnsemble : Combining Hybrid QLSTM Network Ensemble via Adaptive Weighting for Short Term Weather Forecasting."
+    authors: Anuvab Sen, Udayon Sen, Mayukhi Paul, Apurba Prasad Padhy, Sujith Sai, Aakash Mallik, Chhandak Mallick
+    conference_short: SSCI
+    conference: IEEE Symposium Series on Computational Intelligence <strong>(SSCI)</strong>, 2023.
+    pdf: https://arxiv.org/abs/2501.10866
+    bibtex: https://dblp.org/rec/journals/corr/abs-2501-10866.html?view=bibtex
+    image: /anuvab_._sen/assets/publications/SSCI.png
 
   - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
     authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu<sup><i class="fa-regular fa-envelope fa-xs"></i></sup></strong>, Zongwei Zhou<sup><i class="fa-regular fa-envelope fa-xs"></i></sup> <br>( <sup><i class="fa-regular fa-envelope fa-xs"></i></sup> Corresponding authors)
