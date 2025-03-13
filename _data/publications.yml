@@ -51,7 +51,7 @@ main:
     image: /anuvab_._sen/assets/publications/SSCI.png
 
   - title: "HBO-DEViT: Vision Transformer Based Attention-Guided Evolutionary Architecture for Ship-Iceberg Categorisation in Arctic Sar Images"
-    authors: <strong>Anuvab Sen</strong>, Sujith Sai, Chhandak Mallick, Subhabrata Roy, Udayon Sen:
+    authors: <strong>Anuvab Sen</strong>, Sujith Sai, Chhandak Mallick, Subhabrata Roy, Udayon Sen
     conference_short: IGARSS
     conference: IGARSS 2024 /IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>, 2024.
     pdf: https://ieeexplore.ieee.org/document/10641319
