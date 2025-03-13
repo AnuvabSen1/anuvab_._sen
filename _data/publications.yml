@@ -58,6 +58,7 @@ main:
     bibtex: https://dblp.org/rec/conf/igarss/SenSMRS24.html?view=bibtex
     image: /anuvab_._sen/assets/publications/HBO_DEVIT__VISION_TRANSFORMER_BASED_ATTENTION_GUIDED_EVOLUTIONARY_ARCHITECTURE_FOR_SHIP_ICEBERG_CATEGORISATION_IN_ARCTIC_SAR_IMAGES___POSTER.pdf
     notes: Early Accept
+    
 
   - title: Continual Detection Transformer for Incremental Object Detection
     authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Andrea Vedaldi, Christian Rupprecht
