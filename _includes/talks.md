@@ -12,6 +12,6 @@
 <div class="justify-text-76" style="display: inline-block; margin-bottom: 20px;">
   <h4 style="margin: 0 10px 0;">Quantum-Enhanced Hybrid Systems for Complex Data Interpretation</h4>
   <ul style="margin: 0 0 5px; width: 100%; box-sizing: border-box; padding-left: 20px; list-style-type: disc;">
-    <li>Quantum Computing Theory in Practice, Berlin, April 2025.</li>
+    <li>Quantum Computing Theory in Practice (QCTiP), Berlin, Germany, Europe, April 2025.</li>
   </ul>
 </div>
