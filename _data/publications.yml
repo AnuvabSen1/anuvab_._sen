@@ -2,7 +2,7 @@ main:
 
   - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
-    conference_short: SIC
+    conference_short: QIP
     conference: Science and Information Conference <strong>(SIC)</strong>, 2024.
     pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
     bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
