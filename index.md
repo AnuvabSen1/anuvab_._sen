@@ -16,7 +16,7 @@ My work includes the development of innovative Quantum Long Short-Term Memory (Q
 
 <div class="justify-text" style="margin-top: 1em;">
   
-<strong style="color:#e74d3c; font-weight:600">Looking ahead, my research will focus on hardware-classical hardware co-design for photonic quantum systems. My objective is to develop precise and energy-efficient sensing methods that leverage the capabilities of emerging quantum technologies.
+<strong style="color:#e74d3c; font-weight:600">Looking ahead, my research will focus on hardware-classical hardware co-design for photonic quantum systems. My objective is to develop precise and energy-efficient sensing methods that leverage the capabilities of emerging quantum technologies. </strong>
 </div>
 
 <div class="justify-text" style="margin-top: 1em;">
