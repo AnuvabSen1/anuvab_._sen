@@ -5,7 +5,7 @@
   <h4 style="margin: 0 10px 0;">Benchmarking Metaheuristic-Integrated QAOA against Quantum Annealing</h4>
   <ul style="margin: 0 0 5px; width: 100%; box-sizing: border-box; padding-left: 20px; list-style-type: disc;">
     <li>Quantum Information Processing (QIP), Taiwan, Asia</li>
-    <li>Guest Lecture for ECE 442, Indian Institute of Engineering Science, Shibpur.</li>
+    <li>Guest Lecture for ECE 442, Indian Institute of Engineering Science & Technology, Shibpur, India.</li>
   </ul>
 </div>
 
