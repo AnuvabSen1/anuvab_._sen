@@ -9,6 +9,14 @@ main:
     code: https://github.com/AnuvabSen1/QUBOs_QuantumC
     image: /anuvab_._sen/assets/publications/quantum.png
 
+    - title: A Survey of Hyperparameter Selection Methods for Weather Forecasting using State-of-the-Art Machine Learning Algorithms
+    authors: <strong>Anuvab Sen</strong>, Angshuman Roy, <strong>Anuvab Sen</strong>, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Taraka Nithin Vankala, Chhandak Mallick, Aakash Mallik, Angshuman Roy, Sujith Sai, Subhabrata Roy
+    conference_short: Studies in CIS
+    conference: Computational Intelligence <strong>(Book Chapter)</strong>.
+    pdf: https://link.springer.com/book/9783031852510
+    bibtex: https://link.springer.com/book/9783031852510
+    image: /anuvab_._sen/assets/publications/book_chapter.jpg
+
   - title: "Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting"
     authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Dibyarup Dutta, Udayon Sen, Pathikrit Syam, Sandipan Dhar
     conference_short: IJCCI
@@ -124,41 +132,13 @@ main:
     bibtex: https://dblp.org/rec/journals/corr/abs-2501-11168.html?view=bibtex
     image: /anuvab_._sen/assets/publications/preprint.jpg
 
-  - title: Generating Face Images with Attributes for Free
-    authors: <strong>Yaoyao Liu</strong>, Qianru Sun, Xiangnan He, An-An Liu, Yuting Su, Tat-Seng Chua
-    conference_short: TNNLS
-    conference: IEEE Transactions on Neural Networks and Learning Systems <strong>(TNNLS)</strong>, Volume 32, Number 6, 2021.
-    pdf: https://ieeexplore.ieee.org/abstract/document/9146375
-    bibtex: https://dblp.org/rec/journals/tnn/LiuSHLSC21.html?view=bibtex
-    image: https://img.yliu.me/teaser/tnnls.png
-
-  - title: An Ensemble of Epoch-wise Empirical Bayes for Few-shot Learning
-    authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
-    conference_short: ECCV
-    conference: European Conference on Computer Vision <strong>(ECCV)</strong>, 2020.
-    pdf: https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123610392.pdf
-    code: https://gitlab.mpi-klsb.mpg.de/yaoyaoliu/e3bm
-    page: https://lyy.mpi-inf.mpg.de/e3bm/
-    bibtex: https://dblp.org/rec/conf/eccv/LiuSS20.html?view=bibtex
-    image: https://img.yliu.me/teaser/E3BM.png
-
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://dblp.org/rec/conf/cvpr/LiuSLSS20.html?view=bibtex
+  - title: "Differential evolution algorithm based hyper-parameters selection of transformer neural network model for load forecasting"
+    authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Udayon Sen
+    conference_short: SSCI
+    conference: IEEE Symposium Series on Computational Intelligence <strong>(SSCI)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2307.15299
+    code: https://github.com/AnuvabSen1/Meta-Transformer
+    page: https://ieeexplore.ieee.org/abstract/document/10371846
+    bibtex: https://dblp.org/rec/journals/corr/abs-2307-15299.html?view=bibtex
     notes: Oral Presentation
     image: https://img.yliu.me/teaser/mnemonics.png
-
-  - title: Learning to Self-Train for Semi-Supervised Few-Shot Classification
-    authors: Xinzhe Li, Qianru Sun, <strong>Yaoyao Liu</strong>, Shibao Zheng, Qin Zhou, Tat-Seng Chua, Bernt Schiele
-    conference_short: NeurIPS
-    conference: Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2019.
-    pdf: https://papers.nips.cc/paper/2019/file/bf25356fd2a6e038f1a3a59c26687e80-Paper.pdf
-    code: https://github.com/xinzheli1217/learning-to-self-trai
-    page: https://lyy.mpi-inf.mpg.de/lst/
-    bibtex: https://dblp.org/rec/conf/nips/LiSLZZCS19.html?view=bibtex
-    image: https://img.yliu.me/teaser/LST.png
