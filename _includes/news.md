@@ -3,8 +3,30 @@
 <div class="justify-text-70">
 
   <ul>
+    
+  <li><strong>[2024]</strong> Our paper about
+      <a href="./publications/#a_survey_of_hyperparameter_selection_methods_for_weather_forecasting_using_machine_learning">
+        novel hyperparameter selection methods for weather forecasting
+      </a> 
+      appears as a book chapter in
+      <strong>Studies in Computational Intelligence</strong>.
+    </li>
+    
+   <li><strong>[Jan 2025]</strong> Our work 
+        <a href="./publications/#deepeyenet_adaptive_genetic_bayesian_algorithm_based_hybrid_convnexttiny_framework">
+          “DeepEyeNet”
+        </a> 
+        is nominated for "Best Paper" Award at <a href="https://ieee-ssci.org/">SSCI</a> .
+      </li>
     <!-- 1 -->
-    <li><strong>[Aug. 2024]</strong> Started my PhD at Georgia Tech, Atlanta, USA.</li>
+    <li><strong>[Aug. 2024]</strong> Started my PhD at Georgia Institute of Technology, Atlanta, USA.</li>
+    
+  <li><strong>[Jul. 2024]</strong> Our paper about 
+        <a href="./publications/#qgaphensemble_combining_hybrid_qlstm_network_ensemble_via_adaptive_weighting_for_short_term_weather_forecasting">
+          QGAPHEnsemble
+        </a> 
+        is accepted to IJCNN 2024.
+      </li>
     <!-- 2 -->
     <li><strong>[Jul. 2024]</strong> Graduated from IIEST Shibpur, India.</li>
     <!-- 3 -->
@@ -24,7 +46,7 @@
       <a href="https://ieeexplore.ieee.org/document/10641319">IGARSS 2024</a>.
     </li>
     <!-- 5 -->
-    <li><strong>[2024]</strong> Our paper about 
+    <li><strong>[June 2024]</strong> Our paper about 
       <a href="./publications/#a_comparative_analysis_on_metaheuristic_algorithms_based_vision_transformer_model">
         metaheuristic algorithms for alzheimer's
       </a> 
@@ -32,7 +54,7 @@
       <a href="https://ieeexplore.ieee.org/abstract/document/10402213">CICN 2024</a>.
     </li>
     <!-- 6 -->
-    <li><strong>[2024]</strong> Our paper about 
+    <li><strong>[Mar. 2024]</strong> Our paper about 
       <a href="./publications/#exospikenet_a_light_curve_analysis_based_spiking_neural_network_for_exoplanet_detection">
         ExoSpikeNet
       </a> 
@@ -48,7 +70,7 @@
       <a href="https://ieeexplore.ieee.org/abstract/document/10485683">NCC 2024</a>.
     </li>
     <!-- 8 -->
-    <li><strong>[2024]</strong> Our paper about 
+    <li><strong>[Jan 2024]</strong> Our paper about 
       <a href="./publications/#on_the_detection_of_alzheimers_disease_using_fuzzy_logic_based_majority_voter_classifier">
         detecting Alzheimer’s disease using fuzzy logic
       </a> 
@@ -56,15 +78,8 @@
       <a href="https://link.springer.com/article/10.1007/s11042-022-13184-5">MTA 2024</a>.
     </li>
     <!-- 9 -->
-    <li><strong>[2024]</strong> Our paper about 
-      <a href="./publications/#a_survey_of_hyperparameter_selection_methods_for_weather_forecasting_using_machine_learning">
-        hyperparameter selection methods for weather forecasting
-      </a> 
-      appears as a 
-      <strong>Computational Intelligence (Book Chapter)</strong>.
-    </li>
     <!-- 10 -->
-    <li><strong>[2024]</strong> Our paper about 
+    <li><strong>[Jan 2024]</strong> Our paper about 
       <a href="./publications/#benchmarking_metaheuristic_integrated_qaoa_against_quantum_annealing">
         benchmarking metaheuristic-integrated QAOA
       </a> 
@@ -89,51 +104,38 @@
         is accepted to ECTA 2023.
       </li>
       <!-- 3 -->
-      <li><strong>[2023]</strong> Our paper about 
+      <li><strong>[Jul. 2023]</strong> Our paper about 
         <a href="./publications/#differential_evolution_algorithm_based_hyperparameter_selection_of_gated_recurrent_unit_for_electrical_load_forecasting">
           DE-based (GRU) for load forecasting
         </a> 
         is accepted to BRICS 2023.
       </li>
-      <!-- 4 -->
-      <li><strong>[2023]</strong> Our paper about 
-        <a href="./publications/#qgaphensemble_combining_hybrid_qlstm_network_ensemble_via_adaptive_weighting_for_short_term_weather_forecasting">
-          QGAPHEnsemble
-        </a> 
-        is accepted to SSCI 2023.
-      </li>
-      <!-- 5 -->
-      <li><strong>[2023]</strong> Our paper about 
+      
+  <li><strong>[Dec 2023]</strong> Our paper about 
         <a href="./publications/#differential_evolution_algorithm_based_hyperparameters_selection_of_transformer_neural_network_model_for_load_forecasting">
           DE-based hyperparameters for transformers
         </a> 
         is accepted to SSCI 2023.
       </li>
       <!-- 6 -->
-      <li><strong>[2023]</strong> Our paper about 
+      <li><strong>[Nov 2023]</strong> Our paper about 
         <a href="./publications/#differential_evolution_algorithm_based_hyperparameters_selection_of_convolutional_neural_network_for_speech_command_recognition">
           DE-based hyperparameters for CNN (speech command recognition)
         </a> 
         is accepted to ECTA 2023.
       </li>
       <!-- 7 -->
-      <li><strong>[2023]</strong> Our paper 
+      <li><strong>[May 2023]</strong> Our paper 
         <a href="./publications/#online_hyperparameter_optimization_for_class_incremental_learning">
           “Online Hyperparameter Optimization for Class-Incremental Learning”
         </a> 
         is accepted to AAAI 2023.
       </li>
       <!-- 8 -->
-      <li><strong>[2023]</strong> Our work 
-        <a href="./publications/#deepeyenet_adaptive_genetic_bayesian_algorithm_based_hybrid_convnexttiny_framework">
-          “DeepEyeNet”
-        </a> 
-        is published as a preprint.
-      </li>
       <!-- 9 -->
       <li><strong>[Apr. 2023]</strong> Awarded the IEEE CIS Travel Grant to present at SSCI, Mexico.</li>
       <!-- 10 -->
-      <li><strong>[Jan.–Feb. 2023]</strong> Completed 
+      <li><strong>[Feb 2023]</strong> Completed 
         <em>QxQ: Quantum Winter School</em> at Microsoft Azure &amp; TCS R&amp;D.
       </li>
       <!-- 11 -->
