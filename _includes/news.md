@@ -1,49 +1,143 @@
 <h2 style="margin: 60px 0px 10px;">News</h2>
 
 <div class="justify-text-70">
+
   <ul>
-    <li><strong>[Feb. 2025]</strong> Our paper about <a href="./publications">meta-learning</a> is accepted to <a href="https://cvpr.thecvf.com/">CVPR 2025</a>.</li>
-    <li><strong>[Dec. 2024]</strong> I will serve as an Area Chair of <a href="https://icml.cc/Conferences/2025">ICML 2025</a> and <a href="https://www.auai.org/uai2025/">UAI 2025</a>.</li>
-    <li><strong>[Oct. 2024]</strong> Honored to receive the <a href="https://www.ecva.net/index.php#awards">ECVA PhD Award</a>!</li>
-    <li><strong>[Oct. 2024]</strong> I gave guest lectures on 3D at UMich and UC Santa Cruz.</li>
-    <li><strong>[Sep. 2024]</strong> Two papers about <a href="./publications/">3D</a> are accepted to <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a> and its D&B track.</li>
-    <li><strong>[Sep. 2024]</strong> I will serve as an Area Chair of <a href="https://cvpr.thecvf.com/">CVPR 2025</a>, <a href="https://iclr.cc/">ICLR 2025</a>, and <a href="https://aistats.org/aistats2025/">AISTATS 2025</a>.</li>
-    <li><strong>[Aug. 2024]</strong> I will serve as a Senior Program Committee Member of <a href="https://aaai.org/conference/aaai/aaai-25/">AAAI 2025</a>.</li>
-    <li><strong>[Jul. 2024]</strong> Our paper about <a href="https://www.cs.jhu.edu/~yyliu/preprints/iNeMo_Incremental_Neural_Mesh_Models_for_Robust_Class-Incremental_Learning.pdf">robust class-incremental learning</a> is accepted to <a href="https://eccv2024.ecva.net/">ECCV 2024</a>.</li>
-    <li><strong>[Jun. 2024]</strong> I gave a talk on 3D generative models at <a href="https://sites.google.com/view/cvpr24-ac-workshop/">CVPR 2024 Area Chair Workshop</a>.</li>
-    <li><strong>[Apr. 2024]</strong> I will serve as an Area Chair of <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a> and <a href="https://2024.acmmm.org/">ACM MM 2024</a>.</li>
-    <li><strong>[Jan. 2024]</strong> Our paper about <a href="https://arxiv.org/pdf/2306.08103.pdf">diffusion models</a> is accepted to <a href="https://iclr.cc/Conferences/2024/">ICLR 2024</a>.</li>
+    <!-- 1 -->
+    <li><strong>[Aug. 2024]</strong> Started my PhD at Georgia Tech, Atlanta, USA.</li>
+    <!-- 2 -->
+    <li><strong>[Jul. 2024]</strong> Graduated from IIEST Shibpur, India.</li>
+    <!-- 3 -->
+    <li><strong>[Jul. 2024]</strong> Our paper about 
+      <a href="./publications/#qgaphnet_quantum_genetic_algorithm_based_hybrid_qlstm_model_for_soil_moisture_estimation">
+        QGAPHnet
+      </a> 
+      is accepted to 
+      <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10641651">IGARSS 2024</a>.
+    </li>
+    <!-- 4 -->
+    <li><strong>[Jul. 2024]</strong> Our paper about 
+      <a href="./publications/#hbo-devit_vision_transformer_based_attention_guided_evolutionary_architecture">
+        HBO-DEViT
+      </a> 
+      is accepted to 
+      <a href="https://ieeexplore.ieee.org/document/10641319">IGARSS 2024</a>.
+    </li>
+    <!-- 5 -->
+    <li><strong>[2024]</strong> Our paper about 
+      <a href="./publications/#a_comparative_analysis_on_metaheuristic_algorithms_based_vision_transformer_model">
+        A comparative analysis on metaheuristic algorithms
+      </a> 
+      is accepted to 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10402213">CICN 2024</a>.
+    </li>
+    <!-- 6 -->
+    <li><strong>[2024]</strong> Our paper about 
+      <a href="./publications/#exospikenet_a_light_curve_analysis_based_spiking_neural_network_for_exoplanet_detection">
+        ExoSpikeNet
+      </a> 
+      is accepted to 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10545663">CSNT 2024</a>.
+    </li>
+    <!-- 7 -->
+    <li><strong>[Feb. 2024]</strong> Our paper about 
+      <a href="./publications/#devit_state_of_the_art_vision_transformer_model_for_early_detection_of_alzheimers_disease">
+        DE-ViT
+      </a> 
+      is accepted to 
+      <a href="https://ieeexplore.ieee.org/abstract/document/10485683">NCC 2024</a>.
+    </li>
+    <!-- 8 -->
+    <li><strong>[2024]</strong> Our paper about 
+      <a href="./publications/#on_the_detection_of_alzheimers_disease_using_fuzzy_logic_based_majority_voter_classifier">
+        detecting Alzheimer’s disease using fuzzy logic
+      </a> 
+      is accepted to 
+      <a href="https://link.springer.com/article/10.1007/s11042-022-13184-5">MTA 2024</a>.
+    </li>
+    <!-- 9 -->
+    <li><strong>[2024]</strong> Our paper about 
+      <a href="./publications/#a_survey_of_hyperparameter_selection_methods_for_weather_forecasting_using_machine_learning">
+        hyperparameter selection methods
+      </a> 
+      appears as a 
+      <strong>Computational Intelligence (Book Chapter)</strong>.
+    </li>
+    <!-- 10 -->
+    <li><strong>[2024]</strong> Our paper about 
+      <a href="./publications/#benchmarking_metaheuristic_integrated_qaoa_against_quantum_annealing">
+        benchmarking metaheuristic-integrated QAOA
+      </a> 
+      is accepted to 
+      <a href="https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42">SIC 2024</a>.
+    </li>
+    <!-- 11 -->
+    <li><strong>[Jan. 2024]</strong> Undergraduate thesis accepted as a workshop paper at IGARSS, Athens, Greece.</li>
     <li><a href="#" onclick="toggleVis(this); return false;">Show more</a></li>
+
   </ul>
-  
-  <!-- Wrap additional news items in their own <ul> -->
+
   <div id="newsmore" style="display:none">
     <ul>
-      <li><strong>[Dec. 2023]</strong> I will serve as an Area Chair of <a href="https://eccv2024.ecva.net/">ECCV 2024</a> and <a href="https://www.auai.org/uai2024/">UAI 2024</a>.</li>
-      <li><strong>[Oct. 2023]</strong> I gave a talk on continual learning at <a href="https://bair.berkeley.edu/">BAIR, UC Berkeley</a>.</li>
-      <li><strong>[Aug. 2023]</strong> I will serve as an Area Chair of <a href="https://cvpr.thecvf.com/">CVPR 2024</a>, <a href="https://iclr.cc/">ICLR 2024</a>, and <a href="https://aistats.org/aistats2024/">AISTATS 2024</a>.</li>
-      <li><strong>[Aug. 2023]</strong> I will give a talk at <a href="https://engineering.purdue.edu/ChanGroup/comp_imaging_seminar.html">Purdue Computational Imaging Seminar</a>.</li>
-      <li><strong>[May 2023]</strong> Our paper about <a href="https://arxiv.org/pdf/2306.00988.pdf">continual learning</a> is accepted to <a href="https://conferences.miccai.org/2023/en/">MICCAI 2023</a>.</li>
-      <li><strong>[Apr. 2023]</strong> I will give a talk on continual learning at <a href="https://calendars.illinois.edu/detail/2568?eventId=33456212">UIUC External Speaker Series</a>.</li>
-      <li><strong>[Apr. 2023]</strong> I will give a talk on continual learning at <a href="https://sites.google.com/view/visionseminar">MIT Vision and Graphics Seminar</a>.</li>
-      <li><strong>[Apr. 2023]</strong> I will serve as an Area Chair of <a href="https://www.auai.org/uai2023/">UAI 2023</a> and <a href="https://bmvc2023.rog/">BMVC 2023</a>.</li>
-      <li><strong>[Mar. 2023]</strong> I will participate in the <a href="https://cvpr2023.thecvf.com/Conferences/2023/CallForDoctoralConsortium">CVPR 2023 Doctoral Consortium</a> with a travel award.</li>
-      <li><strong>[Mar. 2023]</strong> I gave a talk on continual learning at <a href="https://vigr.cs.columbia.edu/vigr_seminar.html">Columbia VIGR Seminar</a>.</li>
-      <li><strong>[Mar. 2023]</strong> I gave a talk on few-shot learning at EPFL.</li>
-      <li><strong>[Feb. 2023]</strong> Two papers about <a href="./publications/">continual learning</a> are accepted to <a href="http://cvpr2023.thecvf.com/">CVPR 2023</a>.</li>
-      <li><strong>[Dec. 2022]</strong> <a href="https://www.bmvc2023.org">BMVC 2023</a> will be held in Aberdeen, UK, and I will serve as the Website Chair.</li>
-      <li><strong>[Nov. 2022]</strong> Our paper about <a href="https://pure.mpg.de/rest/items/item_3478882_1/component/file_3478883/content">class-incremental learning</a> is accepted to <a href="https://aaai.org/Conferences/AAAI-23/">AAAI 2023</a>.</li>
-      <li><strong>[Oct. 2022]</strong> I am recognized as a top reviewer for <a href="https://neurips.cc/Conferences/2022/ProgramCommittee">NeurIPS 2022</a>.</li>
-      <li><strong>[Aug. 2022]</strong> I will serve as an area chair of <a href="https://aistats.org/aistats2023/">AISTATS 2023</a>.</li>
-      <li><strong>[Jun. 2022]</strong> I will serve as a student mentor of <a href="https://sites.google.com/view/cvpr-academy/">the CVPR Academy</a> at <a href="http://cvpr2022.thecvf.com/">CVPR 2022</a>.</li>
-      <li><strong>[Jun. 2022]</strong> I will serve as a website chair of <a href="https://bmvc2022.org/people/organisers/">BMVC 2022</a>, along with <a href="https://yashbhalgat.github.io/">Yash Bhalgat</a>.</li>
-      <li><strong>[Sep. 2021]</strong> Our paper about <a href="https://openreview.net/pdf?id=BfPzZSype5M">class-incremental learning</a> is accepted to <a href="https://neurips.cc/Conferences/2021">NeurIPS 2021</a>.</li>
-      <li><strong>[Mar. 2021]</strong> Our paper about <a href="https://arxiv.org/pdf/2010.05063.pdf">class-incremental learning</a> is accepted to <a href="http://cvpr2021.thecvf.com/">CVPR 2021</a>.</li>
-      <li><strong>[Jul. 2020]</strong> Our paper about <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-58517-4_24.pdf">few-shot learning</a> is accepted to <a href="https://eccv2020.eu/">ECCV 2020</a>.</li>
-      <li><strong>[Feb. 2020]</strong> Our paper about <a href="https://arxiv.org/pdf/2002.10211.pdf">class-incremental learning</a> is accepted to <a href="http://cvpr2020.thecvf.com/">CVPR 2020</a>.</li>
-      <li><strong>[Feb. 2020]</strong> We will host the <a href="https://www.acmmmasia.org/2020/committee.html">ACM Multimedia Asia 2020</a> conference in Singapore!</li>
-      <li><strong>[Sep. 2019]</strong> Our paper about <a href="https://papers.nips.cc/paper/2019/file/bf25356fd2a6e038f1a3a59c26687e80-Paper.pdf">few-shot learning</a> is accepted to <a href="https://nips.cc/Conferences/2019">NeurIPS 2019</a>.</li>
-      <li><strong>[Mar. 2019]</strong> Our paper about <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Meta-Transfer_Learning_for_Few-Shot_Learning_CVPR_2019_paper.pdf">few-shot learning</a> is accepted to <a href="http://cvpr2019.thecvf.com/">CVPR 2019</a>.</li>
+      <!-- 1 -->
+      <li><strong>[Dec. 2023]</strong> Awarded the IEEE VLSI Design Conference Fellowship among a large pool of applicants.</li>
+      <!-- 2 -->
+      <li><strong>[2023]</strong> Our paper about 
+        <a href="./publications/#comparative_evaluation_of_metaheuristic_algorithms_for_hyperparameter_selection_in_short_term_weather_forecasting">
+          comparative evaluation of metaheuristic algorithms
+        </a> 
+        is accepted to ECTA 2023.
+      </li>
+      <!-- 3 -->
+      <li><strong>[2023]</strong> Our paper about 
+        <a href="./publications/#differential_evolution_algorithm_based_hyperparameter_selection_of_gated_recurrent_unit_for_electrical_load_forecasting">
+          DE-based hyperparameter selection (GRU)
+        </a> 
+        is accepted to BRICS 2023.
+      </li>
+      <!-- 4 -->
+      <li><strong>[2023]</strong> Our paper about 
+        <a href="./publications/#qgaphensemble_combining_hybrid_qlstm_network_ensemble_via_adaptive_weighting_for_short_term_weather_forecasting">
+          QGAPHEnsemble
+        </a> 
+        is accepted to SSCI 2023.
+      </li>
+      <!-- 5 -->
+      <li><strong>[2023]</strong> Our paper about 
+        <a href="./publications/#differential_evolution_algorithm_based_hyperparameters_selection_of_transformer_neural_network_model_for_load_forecasting">
+          DE-based hyperparameters for transformers
+        </a> 
+        is accepted to SSCI 2023.
+      </li>
+      <!-- 6 -->
+      <li><strong>[2023]</strong> Our paper about 
+        <a href="./publications/#differential_evolution_algorithm_based_hyperparameters_selection_of_convolutional_neural_network_for_speech_command_recognition">
+          DE-based hyperparameters for CNN (speech)
+        </a> 
+        is accepted to ECTA 2023.
+      </li>
+      <!-- 7 -->
+      <li><strong>[2023]</strong> Our paper 
+        <a href="./publications/#online_hyperparameter_optimization_for_class_incremental_learning">
+          “Online Hyperparameter Optimization for Class-Incremental Learning”
+        </a> 
+        is accepted to AAAI 2023.
+      </li>
+      <!-- 8 -->
+      <li><strong>[2023]</strong> Our work 
+        <a href="./publications/#deepeyenet_adaptive_genetic_bayesian_algorithm_based_hybrid_convnexttiny_framework">
+          “DeepEyeNet”
+        </a> 
+        is published as a preprint.
+      </li>
+      <!-- 9 -->
+      <li><strong>[Apr. 2023]</strong> Awarded the IEEE CIS Travel Grant to present at SSCI, Mexico.</li>
+      <!-- 10 -->
+      <li><strong>[Jan.–Feb. 2023]</strong> Completed 
+        <em>QxQ: Quantum Winter School</em> at Microsoft Azure &amp; TCS R&amp;D.
+      </li>
+      <!-- 11 -->
+      <li><strong>[Dec. 2022]</strong> Awarded the prestigious Mitacs Globalink Research Scholarship to pursue research at McMaster University, Canada.</li>
     </ul>
   </div>
 </div>
