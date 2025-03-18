@@ -1,6 +1,6 @@
 main:
 
-  - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
+    - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
     conference_short: QIP
     conference: Science and Information Conference <strong>(SIC)</strong>, 2024.
