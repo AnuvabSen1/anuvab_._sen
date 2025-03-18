@@ -1,8 +1,8 @@
 main:
 
-  - title: "Openings"
-    url: /openings/
-    right: true 
+  #- title: "Openings"
+  #  url: /openings/
+  #  right: true 
 
   - title: "Teaching"
     url: /teaching/
