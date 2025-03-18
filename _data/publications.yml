@@ -94,17 +94,16 @@ main:
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10402213
     page: https://ieeexplore.ieee.org/abstract/document/10402213
     bibtex: https://dblp.org/rec/journals/corr/abs-2401-09795.html?view=bibtex
-    image: https://img.yliu.me/teaser/MTL_PAMI.png
+    image: /anuvab_._sen/assets/publications/cicn_alzheimer.jpg
 
-  - title: "RMM: Reinforced Memory Management for Class-Incremental Learning"
-    authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
-    conference_short: NeurIPS
-    conference: IEEE 15th International Conference on Computational Intelligence and Communication Networks (CICN) <strong>(NeurIPS)</strong>, 2021.
-    pdf: https://arxiv.org/pdf/2301.05792.pdf
-    code: https://gitlab.mpi-klsb.mpg.de/yaoyaoliu/rmm/
-    page: https://class-il.mpi-inf.mpg.de/rmm/
-    bibtex: https://dblp.org/rec/conf/nips/LiuSS21.html?view=bibtex
-    image: https://img.yliu.me/teaser/RMM.png
+  - title: "ExoSpikeNet: A Light Curve Analysis Based Spiking Neural Network for Exoplanet Detection"
+    authors: Maneet Chatterjee, <strong>Anuvab Sen</strong>, Subhabrata Roy
+    conference_short: CSNT
+    conference: IEEE Communication Systems and Network Technologies <strong>(CSNT)</strong>, 2024.
+    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10545663
+    page: https://ieeexplore.ieee.org/abstract/document/10545663
+    bibtex: https://ieeexplore.ieee.org/abstract/document/10545663
+    image: /anuvab_._sen/assets/publications/csnt.jpg
 
   - title: Adaptive Aggregation Networks for Class-Incremental Learning
     authors: <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
