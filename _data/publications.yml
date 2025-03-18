@@ -60,7 +60,7 @@ main:
     notes: Early Accept
     
 
-  - title: DE-ViT: State-Of-The-Art Vision Transformer Model for Early Detection of Alzheimer's Disease
+  - title: "DE-ViT: State-Of-The-Art Vision Transformer Model for Early Detection of Alzheimer's Disease"
     authors: <strong>Anuvab Sen</strong>, Subhabrata Roy, Ariv Debnath, Gourav Jha, Rahul Ghosh
     conference_short: NCC
     conference: National Conference on Communications <strong>(NCC)</strong>, 2024.
@@ -68,17 +68,17 @@ main:
     code: https://github.com/AnuvabSen1/Alzheimer_ViT_Disease_Classification
     page: https://ieeexplore.ieee.org/abstract/document/10485683
     bibtex: https://dblp.org/rec/conf/ncc/SenRDJG24.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/devit.png
+    image: /anuvab_._sen/assets/publications/devit.jpg
 
-  - title: Class-Incremental Exemplar Compression for Class-Incremental Learning
-    authors: Zilin Luo, <strong>Yaoyao Liu</strong>, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2023.
-    pdf: https://openaccess.thecvf.com/content/CVPR2023/papers/Luo_Class-Incremental_Exemplar_Compression_for_Class-Incremental_Learning_CVPR_2023_paper.pdf
-    code: https://github.com/xfflzl/CIM-CIL
-    page: https://class-il.mpi-inf.mpg.de/CIM/
-    bibtex: https://dblp.org/rec/conf/cvpr/Luo0SS23.html?view=bibtex
-    image: https://img.yliu.me/teaser/cvpr23_2.png
+  - title: Differential Evolution Algorithm based Hyper-Parameters Selection of Convolutional Neural Network for Speech Command Recognition
+    authors: Sandipan Dhar, <strong>Anuvab Sen</strong>, Aritra Bandyopadhyay, Nanda Dulal Jana, Arjun Ghosh, Zahra Sarayloo
+    conference_short: ECTA
+    conference: 15th International Joint Conference on Computational Intelligence <strong>(ECTA)</strong>, 2023.
+    pdf: https://www.scitepress.org/Papers/2023/122515/122515.pdf
+    code: https://github.com/Techie5879/Hyperparameter-Optimization-CNN-Differential-Evolution
+    page: https://www.scitepress.org/Papers/2023/122515/
+    bibtex: https://dblp.org/rec/journals/corr/abs-2310-08914.html?view=bibtex
+    image: /anuvab_._sen/assets/publications/de_speech.jpg
 
   - title: Online Hyperparameter Optimization for Class-Incremental Learning
     authors: <strong>Yaoyao Liu</strong>, Yingying Li, Bernt Schiele, Qianru Sun
