@@ -4,7 +4,7 @@
 
   <ul>
     
-  <li><strong>[2024]</strong> Our paper about
+  <li><strong>[Mar. 2024]</strong> Our paper about
       <a href="./publications/#a_survey_of_hyperparameter_selection_methods_for_weather_forecasting_using_machine_learning">
         novel hyperparameter selection methods for weather forecasting
       </a> 
