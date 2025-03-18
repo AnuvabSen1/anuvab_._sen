@@ -1,6 +1,6 @@
 main:
 
-    - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
+  - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
     conference_short: QIP
     conference: Science and Information Conference <strong>(SIC)</strong>, 2024.
@@ -8,8 +8,8 @@ main:
     bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
     code: https://github.com/AnuvabSen1/QUBOs_QuantumC
     image: /anuvab_._sen/assets/publications/quantum.png
-
-    - title: A Survey of Hyperparameter Selection Methods for Weather Forecasting using State-of-the-Art Machine Learning Algorithms
+    
+  - title: A Survey of Hyperparameter Selection Methods for Weather Forecasting using State-of-the-Art Machine Learning Algorithms
     authors: <strong>Anuvab Sen</strong>, Angshuman Roy, <strong>Anuvab Sen</strong>, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Taraka Nithin Vankala, Chhandak Mallick, Aakash Mallik, Angshuman Roy, Sujith Sai, Subhabrata Roy
     conference_short: Studies in CIS
     conference: Computational Intelligence <strong>(Book Chapter)</strong>.
@@ -141,4 +141,4 @@ main:
     page: https://ieeexplore.ieee.org/abstract/document/10371846
     bibtex: https://dblp.org/rec/journals/corr/abs-2307-15299.html?view=bibtex
     notes: Oral Presentation
-    image: https://img.yliu.me/teaser/mnemonics.png
+    image: /anuvab_._sen/assets/publications/ssci_mexico.jpg
