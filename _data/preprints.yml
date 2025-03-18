@@ -1,12 +1,12 @@
 main:
 
-  - title: "Learning a Category-level Object Pose Estimator without Pose Annotations"
-    authors: Fengrui Tian, <strong>Yaoyao Liu</strong>, Alan Yuille, Adam Kortylewski, Yueqi Duan, Shaoyi Du, Angtian Wang
+  - title: "DeepEyeNet: Adaptive Genetic Bayesian Algorithm Based Hybrid ConvNeXtTiny Framework For Multi-Feature Glaucoma Eye Diagnosis"
+    authors: Angshuman Roy, <strong>Anuvab Sen</strong>, Soumyajit Gupta, Soham Haldar, Subhrajit Deb, Taraka Nithin Vankala, Arkapravo Das
     conference_short: Preprint
     conference: Preprint.
-    pdf: https://arxiv.org/pdf/2404.05626
-    bibtex: https://dblp.org/rec/journals/corr/abs-2404-05626.html?view=bibtex
-    image: https://img.yliu.me/teaser/pose_estimator_wo_pose_overview.png
+    pdf: https://arxiv.org/abs/2501.11168
+    bibtex: https://dblp.org/rec/journals/corr/abs-2501-11168.html?view=bibtex
+    image: /anuvab_._sen/assets/publications/preprint.jpg
 
   - title: Prompt-Based Exemplar Super-Compression and Regeneration for Class-Incremental Learning
     authors: Ruxiao Duan, <strong>Yaoyao Liu</strong>, Jieneng Chen, Adam Kortylewski, Alan Yuille
