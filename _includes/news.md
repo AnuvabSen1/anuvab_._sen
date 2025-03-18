@@ -26,7 +26,7 @@
     <!-- 5 -->
     <li><strong>[2024]</strong> Our paper about 
       <a href="./publications/#a_comparative_analysis_on_metaheuristic_algorithms_based_vision_transformer_model">
-        A comparative analysis on metaheuristic algorithms
+        metaheuristic algorithms for alzheimer's
       </a> 
       is accepted to 
       <a href="https://ieeexplore.ieee.org/abstract/document/10402213">CICN 2024</a>.
@@ -91,7 +91,7 @@
       <!-- 3 -->
       <li><strong>[2023]</strong> Our paper about 
         <a href="./publications/#differential_evolution_algorithm_based_hyperparameter_selection_of_gated_recurrent_unit_for_electrical_load_forecasting">
-          DE-based hyperparameter selection (GRU)
+          DE-based (GRU) for load forecasting
         </a> 
         is accepted to BRICS 2023.
       </li>
@@ -112,7 +112,7 @@
       <!-- 6 -->
       <li><strong>[2023]</strong> Our paper about 
         <a href="./publications/#differential_evolution_algorithm_based_hyperparameters_selection_of_convolutional_neural_network_for_speech_command_recognition">
-          DE-based hyperparameters for CNN (speech)
+          DE-based hyperparameters for CNN (speech command recognition)
         </a> 
         is accepted to ECTA 2023.
       </li>
