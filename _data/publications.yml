@@ -116,14 +116,13 @@ main:
     image: https://img.yliu.me/teaser/AANets.png
     others: '<a href="https://github.com/yaoyao-liu/class-incremental-learning/tree/main/adaptive-aggregation-networks" target="_blank" rel="noopener"><strong> <i style="color:#e74d3c; font-weight:600" id="githubstars_manets"></i><i style="color:#e74d3c; font-weight:600"> GitHub Stars</i></strong></a><script>githubStars("yaoyao-liu/class-incremental-learning", function(stars) {var startext = document.getElementById("githubstars_manets"); startext.innerHTML=stars;});</script>'
 
-  - title: Learning to Teach and Learn for Semi-supervised Few-shot Image Classification
-    authors: Xinzhe Li, Jianqiang Huang, <strong>Yaoyao Liu</strong>, Qin Zhou, Shibao Zheng, Bernt Schiele, Qianru Sun
-    conference_short: CVIU
-    conference: Computer Vision and Image Understanding <strong>(CVIU)</strong>, Volume 212, 2021.
-    pdf: https://lyy.mpi-inf.mpg.de/preprints/Learning_to_Teach_and_Learn_for_Semi_Supervised_Few_Shot_Image_Classification.pdf
-    code: https://github.com/xinzheli1217/learning-to-self-train
-    bibtex: https://dblp.org/rec/journals/cviu/LiHLZZSS21.html?view=bibtex
-    image: https://img.yliu.me/teaser/LTTL.png
+  - title: "DeepEyeNet: Adaptive Genetic Bayesian Algorithm Based Hybrid ConvNeXtTiny Framework For Multi-Feature Glaucoma Eye Diagnosis"
+    authors: Angshuman Roy, <strong>Anuvab Sen</strong>, Soumyajit Gupta, Soham Haldar, Subhrajit Deb, Taraka Nithin Vankala, Arkapravo Das
+    conference_short: Preprint
+    conference: Preprint.
+    pdf: https://arxiv.org/abs/2501.11168
+    bibtex: https://dblp.org/rec/journals/corr/abs-2501-11168.html?view=bibtex
+    image: /anuvab_._sen/assets/publications/preprint.jpg
 
   - title: Generating Face Images with Attributes for Free
     authors: <strong>Yaoyao Liu</strong>, Qianru Sun, Xiangnan He, An-An Liu, Yuting Su, Tat-Seng Chua
