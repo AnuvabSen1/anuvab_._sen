@@ -1,5 +1,6 @@
 <h1 id="invited-talks"></h1>
-<h2 style="margin: 60px 0px 10px;">Services</h2>
+<h2 style="margin: 60px 0px -15px;">Services</h2>
+<br>
 
 <div class="justify-text" style="display: inline-block; margin-bottom: 20px;">
   <h4 style="margin: 0 10px 0;">Conferences</h4>
