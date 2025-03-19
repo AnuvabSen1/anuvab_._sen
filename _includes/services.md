@@ -1,4 +1,4 @@
-<div class="justify-text-81" style="display: inline-block; margin-bottom: 20px;">
+<div class="justify-text" style="display: inline-block; margin-bottom: 20px;">
   <h1 id="invited-talks"></h1>
   <h2 style="margin: 60px 0px 10px;">Services</h2>
 
