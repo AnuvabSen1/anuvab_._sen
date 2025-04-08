@@ -119,7 +119,7 @@ main:
     conference: Preprint.
     pdf: https://arxiv.org/abs/2501.11168
     bibtex: https://dblp.org/rec/journals/corr/abs-2501-11168.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/preprint.jpg
+    image: /anuvab_._sen/assets/publications/deepeyenet.jpg
 
   - title: "Differential evolution algorithm based hyper-parameters selection of transformer neural network model for load forecasting"
     authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Udayon Sen
