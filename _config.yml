@@ -45,3 +45,5 @@ exclude:
   - README.md
   - LICENSE
   - CNAME
+
+baseurl: "/anuvab_._sen"
