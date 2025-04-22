@@ -29,7 +29,7 @@
     <li>
       <div class="pub-row">
         <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-          <img src="{{ link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+          <img src="{{ site.publication_assets | append: '/' | append: link.image | relative_url }}" class="teaser img-fluid z-depth-1" alt="{{ link.title }}">
           <abbr class="badge">{{ link.conference_short }}</abbr>
         </div>
         <!-- Added justify-text class here -->
