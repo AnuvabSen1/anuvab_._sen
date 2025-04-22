@@ -19,5 +19,4 @@ View the live page using `localhost`:
 
 The instructions for the Google Scholar crawler can be found in [this repository](https://github.com/RayeRen/acad-homepage.github.io).
 <br>
-Before using that, you need to change the Google Scholar ID in the following file:
-https://github.com/yaoyao-liu/yaoyao-liu.github.io/blob/bf1cdb984e6189b855797a88d8a36d194c1e4901/google_scholar_crawler/main.py#L7
+Before using that, you need to change the Google Scholar ID in the following file.
