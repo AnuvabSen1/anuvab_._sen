@@ -48,7 +48,7 @@ main:
     pdf: https://link.springer.com/article/10.1007/s11042-022-13184-5
     page: https://link.springer.com/article/10.1007/s11042-022-13184-5
     bibtex: https://dblp.org/rec/journals/mta/RoyC22.html?view=bibtex
-    image: https://img.yliu.me/teaser/dst.png
+    image: "dst.png"
     notes: Spotlight
 
   - title: "QGAPHEnsemble : Combining Hybrid QLSTM Network Ensemble via Adaptive Weighting for Short Term Weather Forecasting."
@@ -94,7 +94,7 @@ main:
     conference_short: AAAI
     conference: AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2023.
     notes: Oral Presentation
-    image: https://img.yliu.me/teaser/OnlineHyperparameters.png
+    image: "OnlineHyperparameters.png"
 
   - title: "A comparative analysis on metaheuristic algorithms based vision transformer model for early detection of alzheimer's disease"
     authors: <strong>Anuvab Sen</strong>, Udayon Sen, Subhabrata Roy <br> (* Equal contribution)
