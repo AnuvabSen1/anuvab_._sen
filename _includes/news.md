@@ -6,8 +6,8 @@
 
 
 
-  <li><strong>[April. 2025]</strong> 4 Papers accepted in IGARSS 2025, one of them titled <a href="https://2025.ieeeigarss.org/"> TERRAMORPHnet: Deep Fusion Ensemble for Mars Hi-Rise Terrain Classification with Custom Features </a> 
-      is nomnated for "Best Paper" Award at
+  <li><strong>[April. 2025]</strong> 4 Papers accepted, one of them titled <a href="https://2025.ieeeigarss.org/"> TERRAMORPHnet: Deep Fusion Ensemble for Mars Hi-Rise Terrain Classification with Custom Features </a> 
+      is nominated for "Best Paper" Award at
       <a href="https://2025.ieeeigarss.org/">IGARSS 2025</a>.
     </li>
   
