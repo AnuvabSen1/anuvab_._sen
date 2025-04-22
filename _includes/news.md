@@ -2,8 +2,6 @@
 
 <div class="justify-text-70">
 
-[Mar. 2024] Our paper about novel hyperparameter selection methods for weather forecasting appears as a book chapter in Studies in Computational Intelligence.
-
   <ul>
 
 
