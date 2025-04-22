@@ -6,10 +6,10 @@ main:
 
   - title: "Group"
     url: https://greenlab.ece.gatech.edu/members/current-members-new-page/
+    right: true
 
   - title: "Teaching"
     url: /teaching/
-    right: true
 
   - title: "Services"
     url: /services/
