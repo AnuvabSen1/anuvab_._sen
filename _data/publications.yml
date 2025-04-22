@@ -7,7 +7,7 @@ main:
     pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
     bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
     code: https://github.com/AnuvabSen1/QUBOs_QuantumC
-    image: https://img.anuvabsen.me/publications/quantum.png
+    image: /anuvab_._sen/assets/publications/quantum.png
     
   - title: A Survey of Hyperparameter Selection Methods for Weather Forecasting using State-of-the-Art Machine Learning Algorithms
     authors: <strong>Anuvab Sen</strong>, Angshuman Roy, <strong>Anuvab Sen</strong>, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Taraka Nithin Vankala, Chhandak Mallick, Aakash Mallik, Angshuman Roy, Sujith Sai, Subhabrata Roy
