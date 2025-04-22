@@ -8,7 +8,7 @@ email: asen74 (at) gatech.edu
 
 # Search Engine Optimization (SEO)
 keywords: anuvab sen, sen anuvab, anuvabsen, senanuvab
-canonical: https://yaoyaoliu.web.illinois.edu
+canonical: https://anuvabsen.me
 description: Anuvab Sen is a Ph.D. Candidate in the School of Electrical and Computer Engineering at the Georgia Institute of Technology in Atlanta, advised by Dr. Saibal Mukhopadhyay. My research focuses on developing simulation frameworks and design tools for quantum sensors aimed at low-power and precision-based applications.
 
 # The option is used to enable the Illinois template.
@@ -45,5 +45,3 @@ exclude:
   - README.md
   - LICENSE
   - CNAME
-
-baseurl: ""
