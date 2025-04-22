@@ -2,9 +2,19 @@
 
 <div class="justify-text-70">
 
+[Mar. 2024] Our paper about novel hyperparameter selection methods for weather forecasting appears as a book chapter in Studies in Computational Intelligence.
+
   <ul>
+
+
+
+  <li><strong>[April. 2025]</strong> 4 Papers accepted in IGARSS 2025, one of them titled <a href="https://2025.ieeeigarss.org/"> TERRAMORPHnet: Deep Fusion Ensemble for Mars Hi-Rise Terrain Classification with Custom Features </a> 
+      is nomnated for "Best Paper" Award at
+      <a href="https://2025.ieeeigarss.org/">IGARSS 2025</a>.
+    </li>
+  
     
-  <li><strong>[Mar. 2024]</strong> Our paper about
+  <li><strong>[Mar. 2025]</strong> Our paper about
       <a href="./publications/#a_survey_of_hyperparameter_selection_methods_for_weather_forecasting_using_machine_learning">
         novel hyperparameter selection methods for weather forecasting
       </a> 
