@@ -21,7 +21,9 @@ My work includes the development of innovative Quantum Long Short-Term Memory (Q
 
 <div class="justify-text" style="margin-top: 1em;">
   
-<strong style="color:#e74d3c; font-weight:600">I am actively seeking collaborations and opportunities in the fields of quantum sensing, quantum machine learning, and hardware co-design. Please feel free to reach out to discuss potential research collaborations or opportunities.</strong>
+<div class="callout-box">
+  <strong style="color:#e74d3c; font-weight:600"> I am actively seeking collaborations and opportunities in the fields of quantum sensing, quantum machine learning, and hardware co-design. Please feel free to reach out to discuss potential research collaborations or opportunities. </strong>
+</div>
 
 </div>
 
