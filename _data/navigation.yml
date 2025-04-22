@@ -4,12 +4,12 @@ main:
   #  url: /openings/
   #  right: true 
 
-  - title: "Group"
-    url: https://greenlab.ece.gatech.edu/members/current-members-new-page/
-    right: true
-
   - title: "Teaching"
     url: /teaching/
+    right: true
+
+  - title: "Group"
+    url: https://greenlab.ece.gatech.edu/members/current-members-new-page/    
 
   - title: "Services"
     url: /services/
