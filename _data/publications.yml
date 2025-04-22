@@ -16,14 +16,14 @@ main:
     conference: Computational Intelligence <strong>(Book Chapter)</strong>.
     pdf: https://link.springer.com/book/9783031852510
     bibtex: https://link.springer.com/book/9783031852510
-    image: /anuvab_._sen/assets/publications/book_chapter.jpg
+    image: "book_chapter.jpg"
 
   - title: "Comparative Evaluation of Metaheuristic Algorithms for Hyperparameter Selection in Short-Term Weather Forecasting"
     authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Dibyarup Dutta, Udayon Sen, Pathikrit Syam, Sandipan Dhar
     conference_short: IJCCI
     conference: 15th International Joint Conference on Computational Intelligence <strong>(ECTA)</strong>, 2023.
     bibtex: https://bib.yliu.me/CVPR25.txt
-    image: /anuvab_._sen/assets/publications/IJCCI.png
+    image: "IJCCI.png"
 
   - title: "QGAPHnet: Quantum Genetic Algorithm Based Hybrid QLSTM Model for Soil Moisture Estimation"
     authors: Sujith Sai,  <strong>Anuvab Sen</strong>, Chhandak Mallick, Aakash Mallik, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Subhabrata Roy
@@ -31,7 +31,7 @@ main:
     conference: IGARSS 2024 /IEEE International Geoscience and Remote Sensing Symposium
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10641651
     bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/QGAPHNET_IGARSS.png
+    image: "QGAPHNET_IGARSS.png"
 
   - title: "Differential Evolution Algorithm Based Hyperparameter Selection of Gated Recurrent Unit for Electrical Load Forecasting"
     authors: <strong>Anuvab Sen</strong>, Vedica Gupta, Chi Tang
@@ -39,7 +39,7 @@ main:
     conference: Annual BRIC Symposium <strong>(BRICS)</strong>, 2023.
     pdf: https://www.eng.mcmaster.ca/app/uploads/2024/01/BRIC-Proceedings-2023-V3-1.pdf#page=5
     bibtex: https://dblp.org/rec/conf/igarss/SaiSMMSPSR24.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/BRICS.png
+    image: "BRICS.png"
     
   - title: On the detection of Alzheimer’s disease using fuzzy logic based majority voter classifier
     authors: Subhabrata Roy, Abhijit Chandra, <strong>Anuvab Sen</strong>
@@ -57,7 +57,7 @@ main:
     conference: IEEE Symposium Series on Computational Intelligence <strong>(SSCI)</strong>, 2023.
     pdf: https://arxiv.org/abs/2501.10866
     bibtex: https://dblp.org/rec/journals/corr/abs-2501-10866.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/SSCI.png
+    image: "SSCI.png"
 
   - title: "HBO-DEViT: Vision Transformer Based Attention-Guided Evolutionary Architecture for Ship-Iceberg Categorisation in Arctic Sar Images"
     authors: <strong>Anuvab Sen</strong>, Sujith Sai, Chhandak Mallick, Subhabrata Roy, Udayon Sen
@@ -65,7 +65,7 @@ main:
     conference: IGARSS 2024 /IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>, 2024.
     pdf: https://ieeexplore.ieee.org/document/10641319
     bibtex: https://dblp.org/rec/conf/igarss/SenSMRS24.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/HBO_DVIT.png
+    image: "HBO_DVIT.png"
     notes: Early Accept
     
 
@@ -77,7 +77,7 @@ main:
     code: https://github.com/AnuvabSen1/Alzheimer_ViT_Disease_Classification
     page: https://ieeexplore.ieee.org/abstract/document/10485683
     bibtex: https://dblp.org/rec/conf/ncc/SenRDJG24.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/devit.jpg
+    image: "devit.jpg"
 
   - title: Differential Evolution Algorithm based Hyper-Parameters Selection of Convolutional Neural Network for Speech Command Recognition
     authors: Sandipan Dhar, <strong>Anuvab Sen</strong>, Aritra Bandyopadhyay, Nanda Dulal Jana, Arjun Ghosh, Zahra Sarayloo
@@ -87,7 +87,7 @@ main:
     code: https://github.com/Techie5879/Hyperparameter-Optimization-CNN-Differential-Evolution
     page: https://www.scitepress.org/Papers/2023/122515/
     bibtex: https://dblp.org/rec/journals/corr/abs-2310-08914.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/de_speech.jpg
+    image: "de_speech.jpg"
 
   - title: Online Hyperparameter Optimization for Class-Incremental Learning
     authors: <strong>Anuvab Sen</strong>
@@ -103,7 +103,7 @@ main:
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10402213
     page: https://ieeexplore.ieee.org/abstract/document/10402213
     bibtex: https://dblp.org/rec/journals/corr/abs-2401-09795.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/cicn_alzheimer.jpg
+    image: "cicn_alzheimer.jpg"
 
   - title: "ExoSpikeNet: A Light Curve Analysis Based Spiking Neural Network for Exoplanet Detection"
     authors: Maneet Chatterjee, <strong>Anuvab Sen</strong>, Subhabrata Roy
@@ -112,7 +112,7 @@ main:
     pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10545663
     page: https://ieeexplore.ieee.org/abstract/document/10545663
     bibtex: https://ieeexplore.ieee.org/abstract/document/10545663
-    image: /anuvab_._sen/assets/publications/csnt.jpg
+    image: "csnt.jpg"
 
   - title: "DeepEyeNet: Adaptive Genetic Bayesian Algorithm Based Hybrid ConvNeXtTiny Framework For Multi-Feature Glaucoma Eye Diagnosis"
     authors: Angshuman Roy, <strong>Anuvab Sen</strong>, Soumyajit Gupta, Soham Haldar, Subhrajit Deb, Taraka Nithin Vankala, Arkapravo Das
@@ -120,7 +120,7 @@ main:
     conference: Preprint.
     pdf: https://arxiv.org/abs/2501.11168
     bibtex: https://dblp.org/rec/journals/corr/abs-2501-11168.html?view=bibtex
-    image: /anuvab_._sen/assets/publications/deepeyenet.jpg
+    image: "deepeyenet.jpg"
 
   - title: "Differential evolution algorithm based hyper-parameters selection of transformer neural network model for load forecasting"
     authors: <strong>Anuvab Sen</strong>, Arul Rhik Mazumder, Udayon Sen
@@ -131,4 +131,4 @@ main:
     page: https://ieeexplore.ieee.org/abstract/document/10371846
     bibtex: https://dblp.org/rec/journals/corr/abs-2307-15299.html?view=bibtex
     notes: Oral Presentation
-    image: /anuvab_._sen/assets/publications/ssci_mexico.jpg
+    image: "ssci_mexico.jpg"
