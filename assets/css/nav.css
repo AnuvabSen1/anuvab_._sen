@@ -166,7 +166,9 @@
    
 /* Dark mode toggle button */
 #darkToggle {
+  float: right;
   transition: transform 0.3s ease;
+  margin-top: 4px;
 }
 #darkToggle:hover {
   transform: scale(1.2);

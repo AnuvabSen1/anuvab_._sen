@@ -22,7 +22,6 @@ I actively contribute to the research community by serving as a reviewer for top
 .service-card .venue-full { color: #666; }
 @media (max-width: 768px) { .service-grid { grid-template-columns: 1fr; } }
 
-/* Dark mode */
 body.dark-mode .service-card { background: #161b22; border-color: #21262d; box-shadow: 0 2px 12px rgba(0,0,0,0.2); }
 body.dark-mode .service-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
 body.dark-mode .service-card h4 { color: #e6edf3; }

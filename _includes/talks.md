@@ -42,9 +42,7 @@
   gap: 14px;
 }
 .talk-card-header.oral { background: linear-gradient(135deg, #fef2f2, #fee2e2); border-bottom: 2px solid #ef4444; }
-.talk-card-header.upcoming { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-bottom: 2px solid #22c55e; }
 .talk-card-header.invited { background: linear-gradient(135deg, #faf5ff, #f3e8ff); border-bottom: 2px solid #8b5cf6; }
-.talk-card-header.poster { background: linear-gradient(135deg, #eff6ff, #dbeafe); border-bottom: 2px solid #3b82f6; }
 
 .talk-type-badge {
   display: inline-flex;
@@ -59,9 +57,7 @@
   white-space: nowrap;
 }
 .talk-type-badge.oral { background: #ef4444; color: #fff; }
-.talk-type-badge.upcoming { background: #22c55e; color: #fff; }
 .talk-type-badge.invited { background: #8b5cf6; color: #fff; }
-.talk-type-badge.poster { background: #3b82f6; color: #fff; }
 
 .talk-card-header .talk-title-text {
   font-weight: 600;
@@ -135,9 +131,7 @@
 body.dark-mode .talk-card { background: #161b22; border-color: #21262d; }
 body.dark-mode .talk-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.3); border-color: #30363d; }
 body.dark-mode .talk-card-header.oral { background: linear-gradient(135deg, #1c1012, #261416); border-bottom-color: #ef4444; }
-body.dark-mode .talk-card-header.upcoming { background: linear-gradient(135deg, #0c1a10, #0f2615); border-bottom-color: #22c55e; }
 body.dark-mode .talk-card-header.invited { background: linear-gradient(135deg, #1a1325, #1e1630); border-bottom-color: #8b5cf6; }
-body.dark-mode .talk-card-header.poster { background: linear-gradient(135deg, #0c1929, #101d33); border-bottom-color: #3b82f6; }
 body.dark-mode .talk-card-header .talk-title-text { color: #e6edf3; }
 body.dark-mode .talk-venue-row { border-bottom-color: #21262d; }
 body.dark-mode .talk-venue-name { color: #c9d1d9; }
@@ -167,16 +161,16 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
 <!-- Stats -->
 <div class="talk-stats">
   <div class="talk-stat">
-    <div class="talk-stat-num">3</div>
-    <div class="talk-stat-label">Oral / Invited</div>
+    <div class="talk-stat-num">2</div>
+    <div class="talk-stat-label">Oral Presentations</div>
   </div>
   <div class="talk-stat">
-    <div class="talk-stat-num">5</div>
+    <div class="talk-stat-num">1</div>
+    <div class="talk-stat-label">Invited Talk</div>
+  </div>
+  <div class="talk-stat">
+    <div class="talk-stat-num">4</div>
     <div class="talk-stat-label">Countries</div>
-  </div>
-  <div class="talk-stat">
-    <div class="talk-stat-num">3</div>
-    <div class="talk-stat-label">Continents</div>
   </div>
 </div>
 
@@ -184,6 +178,27 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
 
 <!-- 2026 -->
 <div class="talk-year-label">2026</div>
+
+<!-- RAVEN CVPR 2026 - UPCOMING -->
+<div class="talk-card">
+  <div class="talk-card-header oral" style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-bottom: 2px solid #22c55e;">
+    <span class="talk-type-badge oral" style="background: #22c55e;">📌 Upcoming</span>
+    <div class="talk-title-text">RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation</div>
+  </div>
+  <div class="talk-card-body">
+    <div class="talk-venue-row">
+      <div class="talk-venue-icon conf">🏛️</div>
+      <div class="talk-venue-info">
+        <div class="talk-venue-name">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)</div>
+        <div class="talk-venue-detail">Top-tier computer vision conference</div>
+      </div>
+      <div class="talk-venue-loc">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Denver, Colorado · Jun 2026
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- SSMRadNet WACV 2026 -->
 <div class="talk-card">
@@ -209,10 +224,10 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
 <!-- 2024 -->
 <div class="talk-year-label">2024</div>
 
-<!-- Benchmarking QAOA -->
+<!-- Benchmarking QAOA - ORAL -->
 <div class="talk-card">
-  <div class="talk-card-header invited">
-    <span class="talk-type-badge invited">✨ Invited</span>
+  <div class="talk-card-header oral">
+    <span class="talk-type-badge oral">🎤 Oral</span>
     <div class="talk-title-text">Benchmarking Metaheuristic-Integrated QAOA against Quantum Annealing</div>
   </div>
   <div class="talk-card-body">
@@ -220,7 +235,7 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
       <div class="talk-venue-icon intl">🌏</div>
       <div class="talk-venue-info">
         <div class="talk-venue-name">Quantum Information Processing (QIP 2024)</div>
-        <div class="talk-venue-detail">Premier Quantum Computing Conference</div>
+        <div class="talk-venue-detail">Premier quantum computing conference</div>
       </div>
       <div class="talk-venue-loc">
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -241,7 +256,10 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
   </div>
 </div>
 
-<!-- Quantum-Enhanced -->
+<!-- 2025 -->
+<div class="talk-year-label">2025</div>
+
+<!-- QCTiP - INVITED -->
 <div class="talk-card">
   <div class="talk-card-header invited">
     <span class="talk-type-badge invited">✨ Invited</span>
@@ -251,7 +269,7 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
     <div class="talk-venue-row">
       <div class="talk-venue-icon intl">🇩🇪</div>
       <div class="talk-venue-info">
-        <div class="talk-venue-name">Quantum Computing Theory in Practice (QCTiP)</div>
+        <div class="talk-venue-name">Quantum Computing Theory in Practice (QCTiP 2025)</div>
         <div class="talk-venue-detail">International workshop on quantum computing applications</div>
       </div>
       <div class="talk-venue-loc">
