@@ -89,3 +89,12 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   background: #13294B;
   border-color: #13294B;
 }
+
+/* Dark mode overrides for publications */
+body.dark-mode .publications ol.bibliography li .abbr abbr {
+  background-color: #B3A369;
+}
+
+body.dark-mode .publications ol.bibliography li {
+  border-color: #21262d;
+}

@@ -16,6 +16,6 @@ main:
 
   - title: "Towards Efficient and Robust Sequential Chirp-based Data-Driven Radar Processing for Object Detection"
     authors: S. Sharma, H. Kumawat, <strong>Anuvab Sen</strong>, J. Park, Saibal Mukhopadhyay
-    conference_short: IEEE TRS
+    conference_short: IEEE
     conference: <strong>IEEE Transactions on Radar Systems</strong>, 2025.
     image: "chirpnet_trs.jpg"

@@ -5,7 +5,7 @@
   <ul>
 
   <li><strong>[Mar. 2026]</strong> 🎤 <strong>Oral Presentation</strong> of 
-      <em>SSMRadNet: A Sample-wise State-Space Framework for Efficient and Ultra-Light Radar Segmentation and Object Detection</em> at 
+      <em>SSMRadNet</em> at 
       <a href="https://wacv.thecvf.com/">WACV 2026</a>, Tucson, Arizona.
     </li>
 
