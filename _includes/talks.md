@@ -185,27 +185,6 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
 <!-- 2026 -->
 <div class="talk-year-label">2026</div>
 
-<!-- RAVEN CVPR 2026 -->
-<div class="talk-card">
-  <div class="talk-card-header upcoming">
-    <span class="talk-type-badge upcoming">📌 Upcoming</span>
-    <div class="talk-title-text">RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation</div>
-  </div>
-  <div class="talk-card-body">
-    <div class="talk-venue-row">
-      <div class="talk-venue-icon conf">🏛️</div>
-      <div class="talk-venue-info">
-        <div class="talk-venue-name">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)</div>
-        <div class="talk-venue-detail">Top-tier computer vision conference</div>
-      </div>
-      <div class="talk-venue-loc">
-        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        Denver, Colorado · Jun 2026
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- SSMRadNet WACV 2026 -->
 <div class="talk-card">
   <div class="talk-card-header oral">
@@ -241,7 +220,7 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
       <div class="talk-venue-icon intl">🌏</div>
       <div class="talk-venue-info">
         <div class="talk-venue-name">Quantum Information Processing (QIP 2024)</div>
-        <div class="talk-venue-detail">Premier quantum computing conference</div>
+        <div class="talk-venue-detail">Premier Quantum Computing Conference</div>
       </div>
       <div class="talk-venue-loc">
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
