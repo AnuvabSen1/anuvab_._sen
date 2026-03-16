@@ -57,7 +57,7 @@ papertitle { font-weight: 600; font-size: 100%; }
 
 .image.avatar:before { display: none; }
 
-.image.avatar img { border-radius: 100%; width: 45%; padding: 20px; border: 3px solid #B3A369; box-shadow: 0 4px 15px rgba(19,41,75,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.image.avatar img { border-radius: 100%; width: 75%; padding: 10px; border: 3px solid #B3A369; box-shadow: 0 4px 15px rgba(19,41,75,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .image.avatar img:hover { transform: scale(1.03); box-shadow: 0 6px 20px rgba(19,41,75,0.25); }
 
 #header .image.avatar { margin: 0 0 1em 0; width: 8.00em; }
@@ -161,7 +161,7 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
     font-size: inherit;
     color: inherit;
     line-height: inherit;
-    width: 70%; 
+    width: 100%; 
     margin: 0 auto;
 }
 
@@ -225,6 +225,17 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
   background: #fafafa;
 }
 
-
+/* Selected Publications (homepage, no images) */
+.selected-pubs { display: flex; flex-direction: column; gap: 12px; }
+.sel-pub-item { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; background: #fff; border: 1px solid #eee; border-radius: 8px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.sel-pub-item:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+.sel-pub-venue { flex-shrink: 0; color: #fff; padding: 6px 12px; border-radius: 5px; font-weight: 700; font-size: 12px; letter-spacing: 0.5px; text-align: center; min-width: 65px; }
+.sel-pub-venue.cvpr { background: linear-gradient(135deg, #b31b1b, #d32f2f); }
+.sel-pub-venue.wacv { background: linear-gradient(135deg, #1565c0, #1e88e5); }
+.sel-pub-venue.trs { background: linear-gradient(135deg, #2e7d32, #43a047); }
+.sel-pub-content { flex: 1; min-width: 0; }
+.sel-pub-title { font-weight: 600; font-size: 15px; color: #222; margin-bottom: 3px; line-height: 1.35; }
+.sel-pub-authors { font-size: 14px; color: #777; margin-bottom: 3px; }
+.sel-pub-conf { font-size: 13px; color: #999; }
 
 /*# sourceMappingURL=style.css.map */

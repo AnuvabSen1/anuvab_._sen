@@ -4,21 +4,21 @@ main:
     authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
     conference_short: CVPR
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
-    image: "quantum.png"
+    image: "raven_cvpr.jpg"
     notes: Accepted
 
   - title: "SSMRadNet: A Sample-wise State-Space Framework for Efficient and Ultra-Light Radar Segmentation and Object Detection"
     authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
     conference_short: WACV
     conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2026.
-    image: "quantum.png"
+    image: "ssmradnet_wacv.jpg"
     notes: Oral, First Round (~6%)
 
   - title: "Towards Efficient and Robust Sequential Chirp-based Data-Driven Radar Processing for Object Detection"
     authors: S. Sharma, H. Kumawat, <strong>Anuvab Sen</strong>, J. Park, Saibal Mukhopadhyay
     conference_short: IEEE TRS
     conference: <strong>IEEE Transactions on Radar Systems</strong>, 2025.
-    image: "quantum.png"
+    image: "chirpnet_trs.jpg"
 
   - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
@@ -27,7 +27,7 @@ main:
     pdf: https://link.springer.com/chapter/10.1007/978-3-031-62269-4_42
     bibtex: https://dblp.org/rec/journals/corr/abs-2405-15125.html?view=bibtex
     code: https://github.com/AnuvabSen1/QUBOs_QuantumC
-    image: "quantum.png"
+    image: "qaoa_sic.jpg"
 
     
   - title: A Survey of Hyperparameter Selection Methods for Weather Forecasting using State-of-the-Art Machine Learning Algorithms
@@ -77,7 +77,7 @@ main:
     conference: IGARSS 2024 /IEEE International Geoscience and Remote Sensing Symposium <strong>(IGARSS)</strong>, 2024.
     pdf: https://ieeexplore.ieee.org/document/10641319
     bibtex: https://dblp.org/rec/conf/igarss/SenSMRS24.html?view=bibtex
-    image: "HBO_DVIT.png"
+    image: "hbodevit_igarss.jpg"
     
 
   - title: "DE-ViT: State-Of-The-Art Vision Transformer Model for Early Detection of Alzheimer's Disease"
@@ -88,7 +88,7 @@ main:
     code: https://github.com/AnuvabSen1/Alzheimer_ViT_Disease_Classification
     page: https://ieeexplore.ieee.org/abstract/document/10485683
     bibtex: https://dblp.org/rec/conf/ncc/SenRDJG24.html?view=bibtex
-    image: "devit.jpg"
+    image: "devit_ncc.jpg"
 
   - title: Differential Evolution Algorithm based Hyper-Parameters Selection of Convolutional Neural Network for Speech Command Recognition
     authors: Sandipan Dhar, <strong>Anuvab Sen</strong>, Aritra Bandyopadhyay, Nanda Dulal Jana, Arjun Ghosh, Zahra Sarayloo

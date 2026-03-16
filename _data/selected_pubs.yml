@@ -1,0 +1,21 @@
+main:
+
+  - title: "RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation"
+    authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
+    image: "raven_cvpr.jpg"
+    notes: Accepted
+
+  - title: "SSMRadNet: A Sample-wise State-Space Framework for Efficient and Ultra-Light Radar Segmentation and Object Detection"
+    authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
+    conference_short: WACV
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2026.
+    image: "ssmradnet_wacv.jpg"
+    notes: Oral, First Round (~6%)
+
+  - title: "Towards Efficient and Robust Sequential Chirp-based Data-Driven Radar Processing for Object Detection"
+    authors: S. Sharma, H. Kumawat, <strong>Anuvab Sen</strong>, J. Park, Saibal Mukhopadhyay
+    conference_short: IEEE TRS
+    conference: <strong>IEEE Transactions on Radar Systems</strong>, 2025.
+    image: "chirpnet_trs.jpg"
