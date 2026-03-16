@@ -221,6 +221,30 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
   </div>
 </div>
 
+<!-- 2025 -->
+<div class="talk-year-label">2025</div>
+
+<!-- QCTiP - INVITED -->
+<div class="talk-card">
+  <div class="talk-card-header invited">
+    <span class="talk-type-badge invited">✨ Invited</span>
+    <div class="talk-title-text">Quantum-Enhanced Hybrid Classical Systems for Complex Data Interpretation</div>
+  </div>
+  <div class="talk-card-body">
+    <div class="talk-venue-row">
+      <div class="talk-venue-icon intl">🇩🇪</div>
+      <div class="talk-venue-info">
+        <div class="talk-venue-name">Quantum Computing Theory in Practice (QCTiP 2025)</div>
+        <div class="talk-venue-detail">International workshop on quantum computing applications</div>
+      </div>
+      <div class="talk-venue-loc">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Berlin, Germany
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- 2024 -->
 <div class="talk-year-label">2024</div>
 
@@ -251,30 +275,6 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
       <div class="talk-venue-loc">
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         London, UK
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 2025 -->
-<div class="talk-year-label">2025</div>
-
-<!-- QCTiP - INVITED -->
-<div class="talk-card">
-  <div class="talk-card-header invited">
-    <span class="talk-type-badge invited">✨ Invited</span>
-    <div class="talk-title-text">Quantum-Enhanced Hybrid Classical Systems for Complex Data Interpretation</div>
-  </div>
-  <div class="talk-card-body">
-    <div class="talk-venue-row">
-      <div class="talk-venue-icon intl">🇩🇪</div>
-      <div class="talk-venue-info">
-        <div class="talk-venue-name">Quantum Computing Theory in Practice (QCTiP 2025)</div>
-        <div class="talk-venue-detail">International workshop on quantum computing applications</div>
-      </div>
-      <div class="talk-venue-loc">
-        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        Berlin, Germany
       </div>
     </div>
   </div>

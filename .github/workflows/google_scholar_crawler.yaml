@@ -1,27 +1,38 @@
-name: Get Citation Data
+name: Update Google Scholar Stats
 
 on: 
- page_build: 
- schedule:
-  - cron:  '0 8 * * *'
+  page_build:
+  schedule:
+    - cron: '0 8 * * *'   # Runs daily at 8:00 AM UTC
+  workflow_dispatch:        # Allows manual trigger
 
 jobs:
-  build:
+  update-stats:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Reqs
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
       run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
+        pip install -r ./google_scholar_crawler/requirements.txt
+
+    - name: Crawl Google Scholar
       run: |
         cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
+        python main.py
+
+    - name: Push results to google-scholar-stats branch
+      run: |
+        cd ./google_scholar_crawler/results
         git init
         git config --local user.name "${GITHUB_ACTOR}"
+        git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
         git add *.json
-        git commit -m "Updated Citation Data"
+        git commit -m "Updated Google Scholar stats — $(date -u '+%Y-%m-%d %H:%M UTC')"
         git push "${remote_repo}" HEAD:google-scholar-stats --force
