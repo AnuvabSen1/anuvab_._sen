@@ -42,7 +42,6 @@ body.dark-mode .service-card li { border-bottom-color: #21262d; }
     <li><span class="venue-abbr">NeurIPS</span> <span class="venue-full">Neural Information Processing Systems</span></li>
     <li><span class="venue-abbr">ICML</span> <span class="venue-full">International Conference on Machine Learning</span></li>
     <li><span class="venue-abbr">ICLR</span> <span class="venue-full">International Conference on Learning Representations</span></li>
-    <li><span class="venue-abbr">IJCAI</span> <span class="venue-full">International Joint Conf. on Artificial Intelligence</span></li>
   </ul>
 </div>
 
