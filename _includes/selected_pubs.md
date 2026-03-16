@@ -4,7 +4,7 @@
 
 {% for link in site.data.selected_pubs.main %}
 <div class="sel-pub-card">
-  <div class="sel-pub-venue-badge {{ link.conference_short | downcase }}">{{ link.conference_short }}</div>
+  <div class="sel-pub-venue-badge {{ link.badge_class }}">{{ link.conference_short }}</div>
   <div class="sel-pub-body">
     <div class="sel-pub-title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
     <div class="sel-pub-authors">{{ link.authors }}</div>
