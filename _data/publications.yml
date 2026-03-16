@@ -1,5 +1,25 @@
 main:
 
+  - title: "RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation"
+    authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
+    conference_short: CVPR
+    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
+    image: "quantum.png"
+    notes: Accepted
+
+  - title: "SSMRadNet: A Sample-wise State-Space Framework for Efficient and Ultra-Light Radar Segmentation and Object Detection"
+    authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
+    conference_short: WACV
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2026.
+    image: "quantum.png"
+    notes: Oral, First Round (~6%)
+
+  - title: "Towards Efficient and Robust Sequential Chirp-based Data-Driven Radar Processing for Object Detection"
+    authors: S. Sharma, H. Kumawat, <strong>Anuvab Sen</strong>, J. Park, Saibal Mukhopadhyay
+    conference_short: IEEE TRS
+    conference: <strong>IEEE Transactions on Radar Systems</strong>, 2025.
+    image: "quantum.png"
+
   - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen
     conference_short: QIP
@@ -24,14 +44,6 @@ main:
     conference: 15th International Joint Conference on Computational Intelligence <strong>(ECTA)</strong>, 2023.
     bibtex: https://bib.yliu.me/CVPR25.txt
     image: "IJCCI.png"
-
-  - title: "QGAPHnet: Quantum Genetic Algorithm Based Hybrid QLSTM Model for Soil Moisture Estimation"
-    authors: Sujith Sai,  <strong>Anuvab Sen</strong>, Chhandak Mallick, Aakash Mallik, Udayon Sen, Mayukhi Paul, Ananya Sutradhar, Subhabrata Roy
-    conference_short: IGARSS
-    conference: IGARSS 2024 /IEEE International Geoscience and Remote Sensing Symposium
-    pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10641651
-    bibtex: https://dblp.org/rec/journals/corr/abs-2406-09613.html?view=bibtex
-    image: "QGAPHNET_IGARSS.png"
 
   - title: "Differential Evolution Algorithm Based Hyperparameter Selection of Gated Recurrent Unit for Electrical Load Forecasting"
     authors: <strong>Anuvab Sen</strong>, Vedica Gupta, Chi Tang
@@ -66,7 +78,6 @@ main:
     pdf: https://ieeexplore.ieee.org/document/10641319
     bibtex: https://dblp.org/rec/conf/igarss/SenSMRS24.html?view=bibtex
     image: "HBO_DVIT.png"
-    notes: Early Accept
     
 
   - title: "DE-ViT: State-Of-The-Art Vision Transformer Model for Early Detection of Alzheimer's Disease"
@@ -88,13 +99,6 @@ main:
     page: https://www.scitepress.org/Papers/2023/122515/
     bibtex: https://dblp.org/rec/journals/corr/abs-2310-08914.html?view=bibtex
     image: "de_speech.jpg"
-
-  - title: Online Hyperparameter Optimization for Class-Incremental Learning
-    authors: <strong>Anuvab Sen</strong>
-    conference_short: AAAI
-    conference: AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2023.
-    notes: Oral Presentation
-    image: "OnlineHyperparameters.png"
 
   - title: "A comparative analysis on metaheuristic algorithms based vision transformer model for early detection of alzheimer's disease"
     authors: <strong>Anuvab Sen</strong>, Udayon Sen, Subhabrata Roy <br> (* Equal contribution)
