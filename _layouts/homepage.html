@@ -5,20 +5,80 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="{{ site.title }}">
+    <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="author" content="{{ site.title }}">
+    <meta name="robots" content="index, follow">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ site.title }} | {{ site.affiliation }}">
     <meta property="og:url" content="{{ site.canonical }}">
     <meta property="og:site_name" content="{{ site.title }} | {{ site.affiliation }}">
     <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:locale" content="default">
-    <meta property="og:image" content="{{ site.avatar }}">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="{{ site.canonical }}/assets/img/Anuvab_Sen1.jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:alt" content="{{ site.title }} - PhD Candidate at {{ site.affiliation }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ site.title }} | {{ site.affiliation }}">
     <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image" content="{{ site.avatar }}">
+    <meta name="twitter:image" content="{{ site.canonical }}/assets/img/Anuvab_Sen1.jpeg">
+    <meta name="twitter:image:alt" content="{{ site.title }} - PhD Candidate at {{ site.affiliation }}">
+    <meta name="twitter:site" content="@AnuvabSen10">
+
+    <!-- JSON-LD Structured Data for Google Knowledge Panel -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.title }}",
+      "url": "{{ site.canonical }}",
+      "image": "{{ site.canonical }}/assets/img/Anuvab_Sen1.jpeg",
+      "jobTitle": "PhD Candidate",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Georgia Institute of Technology",
+        "url": "https://www.gatech.edu/"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "Georgia Institute of Technology"
+        },
+        {
+          "@type": "Organization",
+          "name": "Indian Institute of Engineering Science and Technology, Shibpur"
+        }
+      ],
+      "sameAs": [
+        "{{ site.google_scholar }}",
+        "{{ site.linkedin }}",
+        "{{ site.twitter }}",
+        "{{ site.github_link }}"
+      ],
+      "knowsAbout": ["Multimodal Perception", "State-Space Models", "Sensor Fusion", "Efficient Machine Learning", "Computer Vision", "Quantum Sensing", "Autonomous Systems"],
+      "description": "{{ site.description }}"
+    }
+    </script>
+
+    <!-- Website Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ site.canonical }}",
+      "description": "{{ site.description }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.title }}"
+      }
+    }
+    </script>
 
     <link rel="canonical" href="{{site.canonical}}/"/>
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/gatech1.png">
@@ -94,13 +154,13 @@
       {% include navigation.md %}
       </div>
 
-      <button id="darkToggle" onclick="toggleDarkMode()" title="Toggle dark mode" style="background:none;border:none;cursor:pointer;color:#f2f2f2;font-size:18px;padding:10px 12px;margin-left:8px;">
-        <i class="fa-solid fa-moon" id="darkIcon"></i>
-      </button>
-
       <a href="javascript:void(0);" class="icon" onclick="myFunction();reverseLinks()">
         <i class="fa fa-bars"></i>
       </a>
+
+      <button id="darkToggle" onclick="toggleDarkMode()" title="Toggle dark mode" style="background:none;border:none;cursor:pointer;color:#f2f2f2;font-size:18px;padding:10px 12px;">
+        <i class="fa-solid fa-moon" id="darkIcon"></i>
+      </button>
       
     </div>
     

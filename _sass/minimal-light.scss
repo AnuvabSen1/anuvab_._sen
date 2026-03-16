@@ -256,7 +256,7 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .selected-pubs { display: flex; flex-direction: column; gap: 12px; }
 .sel-pub-card { display: flex; gap: 16px; align-items: flex-start; padding: 16px 20px; background: #fff; border: 1px solid #eee; border-radius: 10px; transition: transform 0.25s ease, box-shadow 0.25s ease; }
 .sel-pub-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.07); border-color: #ddd; }
-.sel-pub-venue-badge { flex-shrink: 0; color: #fff; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 12px; letter-spacing: 0.5px; text-align: center; min-width: 70px; }
+.sel-pub-venue-badge { flex-shrink: 0; color: #fff; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 12px; letter-spacing: 0.5px; text-align: center; min-width: 70px; background: #13294B; }
 .sel-pub-venue-badge.cvpr { background: linear-gradient(135deg, #b31b1b, #d32f2f); }
 .sel-pub-venue-badge.wacv { background: linear-gradient(135deg, #1565c0, #1e88e5); }
 .sel-pub-venue-badge.trs { background: linear-gradient(135deg, #2e7d32, #43a047); }
