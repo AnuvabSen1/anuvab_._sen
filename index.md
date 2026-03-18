@@ -5,7 +5,7 @@ layout: homepage
 <h2 style="margin: 60px 0px 10px;">About Me</h2>
 
 <div class="justify-text">
-I am a Ph.D. Candidate in the <a href="https://ece.gatech.edu/">School of Electrical and Computer Engineering</a> at the <a href="https://www.gatech.edu/">Georgia Institute of Technology</a> in Atlanta, advised by <a href="https://greenlab.ece.gatech.edu/">Dr. Saibal Mukhopadhyay</a>. My research focuses on building <strong>efficient perception algorithms for autonomous systems</strong> that operate reliably in complex, real-world environments. I develop <strong>lightweight multimodal architectures</strong> that enable robust object detection, segmentation, and scene understanding while remaining deployable on resource-constrained edge platforms.
+I am a Ph.D. Student in the <a href="https://ece.gatech.edu/">School of Electrical and Computer Engineering</a> at the <a href="https://www.gatech.edu/">Georgia Institute of Technology</a> in Atlanta, advised by <a href="https://greenlab.ece.gatech.edu/">Dr. Saibal Mukhopadhyay</a>. My research focuses on building <strong>efficient perception algorithms for autonomous systems</strong> that operate reliably in complex, real-world environments. I develop <strong>lightweight multimodal architectures</strong> that enable robust object detection, segmentation, and scene understanding while remaining deployable on resource-constrained edge platforms.
 </div>
 
 <div class="justify-text">
