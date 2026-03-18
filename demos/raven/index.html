@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAVEN | CVPR 2026 Demo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#fafafa;--bg2:#f3f4f6;--white:#fff;--ink:#111;--ink2:#222;--dim:#555;--muted:#888;--border:#ddd;--border2:#ccc;--blue:#0055dd;--green:#047857;--orange:#b45309;--violet:#5b21b6}
+html{scroll-behavior:smooth}
+body{font-family:'Times New Roman',Georgia,serif;background:var(--white);color:var(--ink);overflow-x:hidden;font-size:18px;line-height:1.8;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(0,85,221,.12)}
+.w{max-width:1100px;margin:0 auto;padding:0 40px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.06)}
+nav .inner{max-width:1100px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{font-weight:700;font-size:1.3rem;color:var(--ink);letter-spacing:4px;text-transform:uppercase}
+.nav-toggle{display:none;border:1px solid var(--border);background:var(--white);color:var(--ink);padding:8px 10px;font:inherit;font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer}
+nav ul{display:flex;gap:36px;list-style:none;align-items:center}
+nav a{color:var(--dim);text-decoration:none;font-size:.85rem;font-weight:700;letter-spacing:2px;transition:color .25s}
+nav a:hover{color:var(--blue)}
+
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 100px;background:var(--white)}
+.hero-c{max-width:860px}
+.hero-badge{display:inline-block;padding:6px 18px;border:1px solid var(--border);font-size:.85rem;color:var(--blue);letter-spacing:2px;text-transform:uppercase;margin-bottom:40px;animation:fu .8s ease both}
+.hero h1{font-size:clamp(3.5rem,9vw,7rem);font-weight:900;line-height:.9;margin-bottom:12px;letter-spacing:-3px;color:var(--ink);animation:fu .8s ease .08s both}
+.hero .sub{font-size:clamp(1.4rem,3vw,2.4rem);font-weight:400;letter-spacing:-.5px;color:var(--ink2);margin-bottom:36px;line-height:1.2;animation:fu .8s ease .14s both}
+.hero-p{font-size:1.15rem;color:var(--dim);max-width:600px;line-height:1.72;margin-bottom:56px;animation:fu .8s ease .2s both;text-align:left;word-spacing:normal;text-wrap:pretty}
+@keyframes fu{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);animation:fu .8s ease .3s both}
+.stat-cell{padding:32px 16px;text-align:center;border-right:1px solid var(--border);transition:background .3s}
+.stat-cell:last-child{border-right:none}
+.stat-cell:hover{background:var(--bg)}
+.stat-v{font-size:2.4rem;font-weight:700;line-height:1;margin-bottom:6px}
+.stat-v.c1{color:var(--blue)}.stat-v.c2{color:var(--green)}.stat-v.c3{color:var(--orange)}.stat-v.c4{color:var(--violet)}
+.stat-l{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
+
+section{padding:100px 0}
+section.gray{background:var(--bg2)}
+.tag{font-size:.8rem;color:var(--blue);letter-spacing:4px;text-transform:uppercase;margin-bottom:10px}
+.sh{font-size:clamp(2rem,4vw,3rem);font-weight:700;letter-spacing:-1px;margin-bottom:16px;line-height:1.05;max-width:700px;text-wrap:balance}
+.sp{font-size:1.1rem;color:var(--dim);max-width:640px;margin-bottom:48px;line-height:1.72;text-align:left;word-spacing:normal;letter-spacing:normal;text-wrap:pretty}
+
+.dash{overflow:hidden;border:1px solid var(--border2);box-shadow:0 16px 48px rgba(0,0,0,.08);transition:box-shadow .4s}
+.dash:hover{box-shadow:0 24px 64px rgba(0,0,0,.1)}
+.dash img{width:100%;display:block}
+
+.arch-wrap{margin:0 -40px}
+.arch-wrap img{width:100%;display:block}
+
+.hw{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.hc{overflow:hidden;border:1px solid var(--border);background:var(--white);transition:all .3s}
+.hc:hover{box-shadow:0 8px 32px rgba(0,0,0,.07);transform:translateY(-2px)}
+.hc-img{height:280px;display:flex;align-items:center;justify-content:center;background:var(--bg);padding:24px}
+.hc-img img{max-height:100%;max-width:100%;object-fit:contain}
+.hc-bd{padding:24px 28px}
+.hc-bd h3{font-size:1.3rem;margin-bottom:8px;font-weight:700}
+.hc-bd p{font-size:.95rem;color:var(--dim);line-height:1.72;text-align:left;word-spacing:normal;text-wrap:pretty}
+
+.specs{margin-top:44px;border:1px solid var(--border);background:var(--white);overflow:hidden}
+.spec-r{display:flex;padding:18px 28px;border-bottom:1px solid var(--border);transition:background .2s;align-items:center;gap:20px}
+.spec-r:last-child{border-bottom:none}
+.spec-r:hover{background:rgba(0,85,221,.02)}
+.spec-r .k{width:160px;flex-shrink:0;font-size:.75rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:3px;line-height:1.5}
+.spec-r .v{flex:1;font-size:.88rem;color:var(--ink);line-height:1.7;text-align:left;word-spacing:normal;text-wrap:pretty;text-transform:uppercase;letter-spacing:1.5px;font-weight:500}
+.spec-r .v.hi{color:var(--green);font-weight:800}
+
+.poster{overflow:hidden;border:1px solid var(--border2);box-shadow:0 16px 48px rgba(0,0,0,.08)}
+.poster img{width:100%;display:block}
+
+footer{padding:64px 0;text-align:center;border-top:1px solid var(--border)}
+footer .ft{font-size:1.15rem;font-weight:700;font-style:italic;color:var(--ink);margin-bottom:10px;line-height:1.5}
+footer .fi{font-size:.95rem;color:var(--dim)}
+footer .fi span{color:var(--blue);font-weight:700}
+
+.rv{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+.rv.v{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+@media(min-width:901px){.sh{white-space:normal}}
+@media(max-width:900px){
+  .hw{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .hero-c{max-width:100%}
+  .sh{max-width:none;white-space:normal;text-wrap:balance;text-transform:uppercase}
+  nav ul{gap:22px}
+}
+@media(max-width:760px){
+  .w{padding:0 20px}
+  nav .inner{padding:0 20px;height:64px}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center}
+  nav ul{position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,.98);border-bottom:1px solid var(--border);display:none;flex-direction:column;align-items:flex-start;gap:0;padding:10px 20px 14px}
+  nav ul.open{display:flex}
+  nav li{width:100%}
+  nav a{display:block;width:100%;padding:12px 0;font-size:.82rem}
+  .hero{padding:96px 0 76px;min-height:auto}
+  .hero-badge{margin-bottom:26px}
+  .hero .sub{margin-bottom:20px}
+  .hero-p,.sp,.hc-bd p,.spec-r .v{max-width:none;text-align:justify;word-spacing:-.02em;letter-spacing:normal;text-wrap:pretty;hyphens:auto;-webkit-hyphens:auto;line-height:1.65}
+  .sp{margin-bottom:34px}
+  .arch-wrap{margin:0}
+  .hc-img{height:220px;padding:20px}
+  .spec-r{flex-direction:column;gap:4px;padding:16px 20px}
+  .spec-r .k{width:auto;font-size:.78rem;letter-spacing:2.5px}
+}
+@media(max-width:600px){
+  .sh{font-size:clamp(2rem,10vw,3.25rem);line-height:1.02}
+  .tag{margin-bottom:8px}
+  .stat-cell{padding:22px 12px}
+  .stat-v{font-size:2rem}
+  footer{padding:50px 0}
+}
+@media(max-width:420px){
+  .w{padding:0 16px}
+  nav .inner{padding:0 16px}
+  .logo{font-size:1.1rem;letter-spacing:3px}
+  .nav-toggle{padding:7px 9px;font-size:.72rem}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="inner">
+  <div class="logo">Raven</div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">Menu</button>
+  <ul id="navMenu"><li><a href="#demo">DEMO</a></li><li><a href="#arch">ARCHITECTURE</a></li><li><a href="#hw">HARDWARE</a></li><li><a href="#res">RESULTS</a></li></ul>
+</div></nav>
+
+<section class="hero"><div class="w hero-c">
+  <div class="hero-badge">CVPR 2026 Demo Track</div>
+  <h1>RAVEN</h1>
+  <div class="sub">Radar Adaptive Vision Encoders</div>
+  <p class="hero-p">Real-time human detection from raw FMCW radar signals on edge hardware. Physics-inspired streaming architecture with adaptive early-exit inference.</p>
+  <div class="stats-row">
+    <div class="stat-cell"><div class="stat-v c1" data-t="0.27">0</div><div class="stat-l">GMACs</div></div>
+    <div class="stat-cell"><div class="stat-v c2" data-t="170" data-s="×">0</div><div class="stat-l">Less Compute</div></div>
+    <div class="stat-cell"><div class="stat-v c3" data-t="0.35" data-s="M">0</div><div class="stat-l">Parameters</div></div>
+    <div class="stat-cell"><div class="stat-v c4" data-t="50" data-p="≥">0</div><div class="stat-l">FPS on Edge</div></div>
+  </div>
+</div></section>
+
+<section id="demo" class="gray"><div class="w">
+  <div class="tag rv">01 — Live Demo</div>
+  <div class="sh rv d1">Dashboard</div>
+  <div class="sp rv d2">Attendees walk in front of the radar and see themselves detected in real time. Camera feed, BEV detection output, and adaptive energy plot all running on edge hardware.</div>
+  <div class="dash rv d3"><img src="assets/demo_dashboard_final.png" alt="RAVEN Demo"></div>
+</div></section>
+
+<section id="arch"><div class="w">
+  <div class="tag rv">02 — Architecture</div>
+  <div class="sh rv d1">Physics-Inspired Streaming</div>
+  <div class="sp rv d2">Per-receiver SSMs, cross-antenna attention beamformer, and chirp-wise SSM backbone with anytime early-exit inference.</div>
+  <div class="arch-wrap rv d3"><img src="assets/raven_arch_animated.gif" alt="RAVEN Architecture"></div>
+</div></section>
+
+<section id="hw" class="gray"><div class="w">
+  <div class="tag rv">03 — Hardware</div>
+  <div class="sh rv d1">Edge Deployment</div>
+  <div class="sp rv d2">Based on availability, the demo runs on a LoCoBot mobile robot or a laptop, streaming raw ADC data from a TI IWR1443BOOST radar sensor.</div>
+  <div class="hw">
+    <div class="hc rv"><div class="hc-img"><img src="assets/locobot.jpg" alt="LoCoBot"></div><div class="hc-bd"><h3>LoCoBot WX250s</h3><p>Mobile robot with radar, 2D LiDAR, RGB-D and stereo cameras, Intel i3 edge processor.</p></div></div>
+    <div class="hc rv d1"><div class="hc-img"><img src="assets/radar_board.png" alt="TI IWR1443BOOST"></div><div class="hc-bd"><h3>TI IWR1443BOOST</h3><p>76–81 GHz FMCW radar-on-chip. 3TX, 4RX, 12 virtual elements in TDM-MIMO. Up to 4 GHz chirp bandwidth.</p></div></div>
+  </div>
+  <div class="specs rv">
+    <div class="spec-r"><div class="k">Radar</div><div class="v">TI IWR1443BOOST, 76–81 GHz, 3TX/4RX TDM-MIMO, 12 virtual antennas</div></div>
+    <div class="spec-r"><div class="k">Data Capture</div><div class="v">DCA1000EVM, 1 Gbps Ethernet real-time ADC streaming</div></div>
+    <div class="spec-r"><div class="k">Camera</div><div class="v">Co-registered RGB, visual reference only</div></div>
+    <div class="spec-r"><div class="k">Compute</div><div class="v">Intel i3 edge processor (LoCoBot) · NVIDIA RTX-class laptop GPU</div></div>
+    <div class="spec-r"><div class="k">Model</div><div class="v hi">0.35M params · ≤1.02 GMACs full-frame · ≤0.27 GMACs sub-frame</div></div>
+    <div class="spec-r"><div class="k">Speed</div><div class="v hi">≥50 FPS with sub-frame latency via adaptive early exit</div></div>
+  </div>
+</div></section>
+
+<section id="res"><div class="w">
+  <div class="tag rv">04 — Results</div>
+  <div class="sh rv d1">Performance at a Glance</div>
+  <div class="sp rv d2">State-of-the-art detection and segmentation accuracy at orders of magnitude less compute than prior radar perception models.</div>
+  <div class="poster rv d3"><img src="assets/poster.png" alt="Results"></div>
+</div></section>
+
+<footer><div class="w">
+  <p class="ft">RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation</p>
+  <p class="fi"><span>CVPR 2026 Demo Track</span> · Georgia Institute of Technology</p>
+</div></footer>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',scrollY>50)});
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v')})},{threshold:.08,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
+const co=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting||e.target.dataset.done)return;e.target.dataset.done='1';const tgt=parseFloat(e.target.dataset.t),p=e.target.dataset.p||'',s=e.target.dataset.s||'',fl=tgt<1,dur=1200,st=performance.now();(function tick(n){const pr=Math.min((n-st)/dur,1),ez=1-Math.pow(1-pr,4),v=tgt*ez;e.target.textContent=p+(fl?v.toFixed(2):Math.round(v))+s;if(pr<1)requestAnimationFrame(tick)})(st)})},{threshold:.5});
+document.querySelectorAll('.stat-v').forEach(el=>co.observe(el));
+const navToggle=document.getElementById('navToggle');
+const navMenu=document.getElementById('navMenu');
+if(navToggle&&navMenu){
+  navToggle.addEventListener('click',()=>{
+    const open=navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded',open?'true':'false');
+  });
+}
+document.querySelectorAll('nav a').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const target=document.querySelector(a.getAttribute('href'));if(target)target.scrollIntoView({behavior:'smooth'});if(navMenu){navMenu.classList.remove('open');navToggle&&navToggle.setAttribute('aria-expanded','false')}})});
+window.addEventListener('resize',()=>{if(window.innerWidth>760&&navMenu){navMenu.classList.remove('open');navToggle&&navToggle.setAttribute('aria-expanded','false')}});
+</script>
+</body>
+</html>

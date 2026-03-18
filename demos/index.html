@@ -1,0 +1,237 @@
+---
+layout: default
+title: Demos
+permalink: /demos/
+---
+
+<h2 style="margin: 60px 0px 10px;">Demos</h2>
+
+<div class="justify-text" style="margin-bottom: 24px; font-size: 15.5px; line-height: 1.7;">
+Interactive project demos and visualizations from my research.
+</div>
+
+<style>
+.demo-hero {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0a1628 0%, #13294B 40%, #1a3a66 70%, #0d4a6b 100%);
+  color: #fff;
+  transition: transform 0.3s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+.demo-hero:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(19,41,75,0.25);
+}
+
+/* Animated grid background */
+.demo-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(179,163,105,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(179,163,105,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-drift 20s linear infinite;
+}
+@keyframes grid-drift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(40px, 40px); }
+}
+
+/* Glowing orbs */
+.demo-hero::after {
+  content: '';
+  position: absolute;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(179,163,105,0.15), transparent 70%);
+  top: -80px; right: -60px;
+  border-radius: 100%;
+  animation: orb-float 6s ease-in-out infinite;
+}
+@keyframes orb-float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-20px, 15px); }
+}
+
+.demo-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 28px;
+  padding: 32px;
+  align-items: center;
+}
+
+.demo-hero-visual {
+  flex-shrink: 0;
+  width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(179,163,105,0.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  position: relative;
+}
+.demo-hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s;
+}
+.demo-hero:hover .demo-hero-visual img {
+  transform: scale(1.03);
+}
+
+.demo-hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.demo-hero-badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.demo-badge-venue {
+  background: linear-gradient(135deg, #b31b1b, #d32f2f);
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.demo-badge-live {
+  background: rgba(34,197,94,0.9);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.demo-badge-live .pulse-dot {
+  width: 7px; height: 7px;
+  background: #fff;
+  border-radius: 100%;
+  animation: pulse-live 1.5s ease-in-out infinite;
+}
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+.demo-hero-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+  margin: 0 0 8px;
+}
+.demo-hero-content .demo-authors {
+  font-size: 14px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 12px;
+}
+.demo-hero-content .demo-authors strong {
+  color: #B3A369;
+  font-weight: 600;
+}
+.demo-hero-content .demo-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.demo-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+.demo-hero-tag {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.8);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  backdrop-filter: blur(4px);
+}
+
+.demo-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #B3A369;
+  color: #0a1628;
+  padding: 11px 24px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(179,163,105,0.3);
+}
+.demo-hero:hover .demo-cta-btn {
+  background: #c4b47a;
+  box-shadow: 0 6px 24px rgba(179,163,105,0.4);
+  transform: translateX(3px);
+}
+.demo-cta-btn svg { width: 16px; height: 16px; fill: #0a1628; transition: transform 0.2s; }
+.demo-hero:hover .demo-cta-btn svg { transform: translateX(3px); }
+
+/* Dark mode */
+body.dark-mode .demo-hero {
+  background: linear-gradient(135deg, #010409 0%, #0d1117 40%, #161b22 70%, #1c2128 100%);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+body.dark-mode .demo-hero:hover {
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+body.dark-mode .demo-hero-visual {
+  border-color: rgba(179,163,105,0.2);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .demo-hero-inner {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 18px;
+  }
+  .demo-hero-visual {
+    width: 100%;
+  }
+  .demo-hero-content h3 { font-size: 17px; }
+}
+</style>
+
+<!-- RAVEN Demo Card -->
+<a class="demo-hero" href="./raven/" target="_blank">
+  <div class="demo-hero-inner">
+    <div class="demo-hero-visual" style="width:320px">
+      <img src="../assets/publications/raven_demo_combined.jpg" alt="RAVEN Hardware Setup">
+    </div>
+    <div class="demo-hero-content">
+      <div class="demo-hero-badges">
+        <span class="demo-badge-venue">CVPR 2026</span>
+        <span class="demo-badge-live"><span class="pulse-dot"></span> Live Demo</span>
+      </div>
+      <h3>Real-Time Adaptive Radar Perception on Edge Devices from Raw ADC Signals on a TI IWR1443BOOST Sensor</h3>
+      <div class="demo-authors"><strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay</div>
+      <span class="demo-cta-btn">Launch Demo <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7" stroke="#0a1628" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </div>
+  </div>
+</a>
