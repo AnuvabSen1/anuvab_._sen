@@ -5,7 +5,7 @@ main:
     conference_short: CVPR
     badge_class: cvpr
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
-    notes: Accepted
+    notes: Highlight (~1%)
 
   - title: "SSMRadNet: A Sample-wise State-Space Framework for Efficient and Ultra-Light Radar Segmentation and Object Detection"
     authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
