@@ -89,6 +89,7 @@ figcaption{font-size:.88rem;color:var(--muted);line-height:1.45}
 table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
 th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
 th{font-family:var(--display);font-weight:600}
+tr.best td{font-weight:600}
 td.tbd{color:var(--red);font-family:var(--mono);font-size:.82rem}
 @media (max-width:460px){th,td{padding:8px 6px;font-size:.84rem}}
 .note{font-size:.88rem;color:var(--muted)}
@@ -109,10 +110,9 @@ footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padd
   <div class="authors"><a href="https://anuvabsen.com">Anuvab Sen</a> &nbsp;·&nbsp; Saibal Mukhopadhyay</div>
   <div class="aff">GREEN Lab, School of Electrical and Computer Engineering, Georgia Institute of Technology</div>
   <div class="links">
-    <span class="btn todo" aria-disabled="true">Paper (coming soon)</span>
-    <span class="btn todo" aria-disabled="true">Live Radar Studio (coming soon)</span>
+    <a class="btn" href="paper.pdf" target="_blank" rel="noopener">Paper (PDF)</a>
     <a class="btn ghost" href="/demos/">All demos</a>
-    <a class="btn ghost" href="#real2sim2real">Real2Sim2Real on LoCoBot</a>
+    <a class="btn ghost" href="#real2sim2real">Real-robot results</a>
   </div>
 </header>
 
@@ -122,12 +122,18 @@ footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padd
     <figcaption>Radar Studio, end to end. A prompt (“busy intersection with pedestrians at night”, then “highway with trucks in the rain”) becomes generated scenes; each scene is ray-traced into radar, and SSMRadNet detects objects from that radar. Part two runs an uploaded city drive through the same chain. Loading screens are sped up.</figcaption>
   </figure>
   <p class="col tldr">Robots rarely learn from radar because real radar is expensive to record, hard to label, and tied to one sensor. Prompt-to-Radar predicts what a specific radar would measure in any scene and from any robot pose, so a robot can train its radar perception in a world model and take it back to the real world.</p>
+  <div class="stats">
+    <div class="stat"><b>87 → 95</b><span>successful runs out of 100 in unseen corridors, real radar only vs. world model + real</span></div>
+    <div class="stat"><b>8 → 2</b><span>runs with a collision out of 100, same navigation policy</span></div>
+    <div class="stat"><b>+15–16 pts</b><span>AP and F1 on real RADIal test data, across three detectors</span></div>
+    <div class="stat"><b>94 / 95</b><span>SSMRadNet AP / F1 (%) on RADIal with world-model data</span></div>
+  </div>
 </section>
 
 <section class="section">
   <div class="col">
     <span class="eyebrow">Abstract</span>
-    <p>Radar works in darkness, rain and glare, yet robots rarely learn from it. We present a generative radar world model that predicts what a specific radar would measure in any scene and from any robot pose. Scenes come from a video diffusion model trained on four driving datasets (nuScenes, Waymo Open, Argoverse 2 and BDD100K), a real video, or a robot's own map. They are ray-traced, passed through a circuit-level receive chain with an adaptive analog front end, and perceived by a state-space detector, SSMRadNet, that outputs obstacles, closing speeds and tracks. Cached ray tracing makes frames re-run 33–141× faster, so the radar hardware itself becomes a knob. As a late-breaking result we close the Real2Sim2Real loop on a LoCoBot: corridors the robot maps are rebuilt in the world model, 77&nbsp;GHz radar rendered there trains perception for navigation, and the stack is deployed back on the physical robot.</p>
+    <p>Radar perception requires labeled data for difficult scenes that are costly to collect on physical robots. We present Prompt-to-Radar, a generative radar world model that reconstructs real scenes, varies obstacles and trajectories, and renders labeled radar through a configurable physical sensor model. The generated data improves real RADIal detection by 15–16 percentage points in AP and F1 across three detector architectures. We also complete a Real2Sim2Real deployment on a LoCoBot: with an identical navigation policy, combining generated and real radar raises success in unseen corridors from 87/100 to 95/100 runs and reduces runs with a collision from eight to two. These results demonstrate transfer of learned radar perception to physical navigation and motivate controllable hard-scene generation for robot learning.</p>
   </div>
 </section>
 
@@ -200,7 +206,7 @@ footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padd
   <div class="col">
     <span class="eyebrow">Late-breaking result</span>
     <h2>Real2Sim2Real on a LoCoBot</h2>
-    <p>The robot carries a radar, 2D LiDAR, RGB-D and stereo cameras and an edge processor. We bring its own corridors into the world model, train there with exact labels, and deploy back on the robot.</p>
+    <p>The LoCoBot carries a TI IWR1443BOOST radar (76–81&nbsp;GHz, 3 transmitters and 4 receivers in TDM-MIMO, 12 virtual channels), plus 2D LiDAR, RGB-D and stereo cameras. We bring its own corridors into the world model, train SSMRadNet there with exact labels, and deploy it back on the robot with the navigation policy left unchanged.</p>
   </div>
   <div class="grid3">
     <figure>
@@ -218,18 +224,32 @@ footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padd
   </div>
   <div class="loop">
     <div class="step real"><span class="tag">Real</span><h3>Collect and map</h3><p>Drive the corridors, record all sensors, and build an occupancy map with pose.</p></div>
-    <div class="step sim"><span class="tag">Sim</span><h3>Rebuild and train</h3><p>Rebuild the map as a 3D scene, render 77&nbsp;GHz radar along recorded and new trajectories with moved obstacles, and train SSMRadNet with exact labels.</p></div>
-    <div class="step real"><span class="tag">Real</span><h3>Deploy and navigate</h3><p>Run the trained stack on the robot's edge processor and navigate seen and unseen corridors.</p></div>
+    <div class="step sim"><span class="tag">Sim</span><h3>Rebuild and train</h3><p>Rebuild the map as a 3D scene, render the robot's 76–81&nbsp;GHz radar along recorded and new trajectories with boxes and chairs moved, and train SSMRadNet with exact labels.</p></div>
+    <div class="step real"><span class="tag">Real</span><h3>Deploy and navigate</h3><p>Run the trained detector on the physical robot with the same navigation policy, in unseen corridors containing boxes and chairs.</p></div>
   </div>
   <div class="col">
     <div class="tablewrap">
       <table>
-        <caption class="note" style="caption-side:bottom;text-align:left;padding-top:8px">Real-robot navigation. Numbers are being added; see the paper for the final values.</caption>
-        <thead><tr><th>Perception trained on</th><th>Success ↑</th><th>Collisions ↓</th></tr></thead>
+        <caption class="note" style="caption-side:bottom;text-align:left;padding-top:8px">SSMRadNet perception, 100 trials per condition in unseen corridors with boxes and chairs; identical navigation policy. Collisions count runs with at least one collision.</caption>
+        <thead><tr><th>Perception trained on</th><th>Successful runs ↑</th><th>Runs with a collision ↓</th></tr></thead>
         <tbody>
-          <tr><td>Real robot radar only</td><td class="tbd">TBA</td><td class="tbd">TBA</td></tr>
-          <tr><td>World model (Real2Sim)</td><td class="tbd">TBA</td><td class="tbd">TBA</td></tr>
-          <tr><td>World model + real</td><td class="tbd">TBA</td><td class="tbd">TBA</td></tr>
+          <tr><td>Real radar only</td><td>87 / 100</td><td>8</td></tr>
+          <tr><td>World model only</td><td>83 / 100</td><td>6</td></tr>
+          <tr class="best"><td>World model + real</td><td>95 / 100</td><td>2</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col">
+    <h3>Detection on real RADIal data</h3>
+    <div class="tablewrap">
+      <table>
+        <caption class="note" style="caption-side:bottom;text-align:left;padding-top:8px">RADIal test set, AP / F1 in %. Both training conditions are from this study.</caption>
+        <thead><tr><th>Detector</th><th>Real only: AP</th><th>F1</th><th>+ World model: AP</th><th>F1</th></tr></thead>
+        <tbody>
+          <tr><td>FFT-RadNet</td><td>75</td><td>77</td><td>91</td><td>93</td></tr>
+          <tr><td>T-FFTRadNet</td><td>77</td><td>79</td><td>92</td><td>95</td></tr>
+          <tr class="best"><td>SSMRadNet</td><td>78</td><td>80</td><td>94</td><td>95</td></tr>
         </tbody>
       </table>
     </div>
