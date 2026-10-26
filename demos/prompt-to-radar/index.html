@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Prompt-to-Radar: a generative radar world model for Real2Sim2Real robot navigation. CoRL 2026 Late-Breaking Results. Anuvab Sen, Saibal Mukhopadhyay, Georgia Tech.">
+<meta property="og:title" content="Prompt-to-Radar | CoRL 2026">
+<meta property="og:description" content="A generative radar world model: text prompts, drive videos or a robot's own map become ray-traced radar, perceived by SSMRadNet, and closed into a Real2Sim2Real loop on a LoCoBot.">
+<meta property="og:image" content="https://anuvabsen.com/demos/prompt-to-radar/media/image7.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico">
+<title>Prompt-to-Radar | CoRL 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column (~68ch) with media bands that widen to 1080px; the pipeline is the spine of the page. */
+:root{
+  --bg:#f5f4f8; --surface:#ffffff; --ink:#17142a; --muted:#5b5872; --line:#dcd9e6;
+  --accent:#8a1e8c; --accent-2:#d9541e; --chip:#efe6f3; --red:#b4232a;
+  --display:"Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --body:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#100e1b; --surface:#1a1729; --ink:#ece9f6; --muted:#a6a1bd; --line:#2f2b45;
+  --accent:#e07ae2; --accent-2:#f29a63; --chip:#2a2140; --red:#f07a7f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#100e1b; --surface:#1a1729; --ink:#ece9f6; --muted:#a6a1bd; --line:#2f2b45;
+  --accent:#e07ae2; --accent-2:#f29a63; --chip:#2a2140; --red:#f07a7f; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1080px;margin:0 auto;padding-block:40px 64px;display:flex;flex-direction:column;gap:56px}
+.col{max-width:68ch;margin:0 auto;width:100%}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:700;letter-spacing:-.01em}
+h1 .sub{display:block;font-weight:500;font-size:.5em;color:var(--muted);margin-top:.5rem;letter-spacing:0}
+h2{font-size:1.65rem;font-weight:600}
+h3{font-size:1.1rem;font-weight:600}
+p{margin:0}
+.eyebrow{font:500 .78rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+header{display:flex;flex-direction:column;gap:18px;text-align:left}
+.authors{font-family:var(--display);font-size:1.1rem}
+.authors a{color:inherit}
+.aff{color:var(--muted);font-size:.95rem}
+.venue{display:inline-flex;gap:8px;align-items:center;font:500 .85rem var(--mono);color:var(--accent);background:var(--chip);padding:6px 10px;border-radius:4px;width:max-content;max-width:100%}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font:600 .92rem var(--display);text-decoration:none;color:var(--surface);background:var(--ink);padding:9px 16px;border-radius:999px;border:1px solid var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.todo{background:transparent;color:var(--red);border:1px dashed var(--red)}
+.btn:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+figure{margin:0;display:flex;flex-direction:column;gap:8px}
+video,img{display:block;width:100%;max-width:100%;height:auto;border-radius:6px;background:#000}
+figcaption{font-size:.88rem;color:var(--muted);line-height:1.45}
+.tldr{font-size:1.2rem;line-height:1.55;border-left:3px solid var(--accent);padding-left:18px}
+.section{display:flex;flex-direction:column;gap:20px}
+.section > .col{display:flex;flex-direction:column;gap:14px}
+/* pipeline strip */
+.pipe{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.stage{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.stage .n{font:500 .72rem var(--mono);color:var(--accent-2)}
+.stage p{font-size:.88rem;line-height:1.45;color:var(--muted)}
+.stage video{aspect-ratio:4/3;object-fit:cover}
+.stage.nav{border-style:dashed}
+@media (max-width:900px){.pipe{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:460px){.pipe{grid-template-columns:minmax(0,1fr)}}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:2fr 2fr 1fr;gap:16px;align-items:start}
+.pair{display:grid;grid-template-columns:3fr 1fr 1fr;gap:10px;align-items:start}
+@media (max-width:700px){.grid2{grid-template-columns:minmax(0,1fr)}.grid3{grid-template-columns:2fr 1fr}.grid3 figure:first-child{grid-column:1/-1}.pair{grid-template-columns:2fr 1fr 1fr}}
+.grid3 figure:last-child video{max-height:300px;object-fit:contain}
+/* real2sim2real steps */
+.loop{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;counter-reset:s}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.step .tag{font:500 .72rem var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.step.real .tag{color:var(--accent-2)} .step.sim .tag{color:var(--accent)}
+.step p{font-size:.92rem;line-height:1.5;color:var(--muted)}
+@media (max-width:700px){.loop{grid-template-columns:minmax(0,1fr)}}
+/* numbers */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.stat{border-top:2px solid var(--ink);padding-top:10px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.stat b{font:600 1.8rem/1.1 var(--display);font-variant-numeric:tabular-nums}
+.stat span{font-size:.86rem;color:var(--muted);line-height:1.4}
+@media (max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{font-family:var(--display);font-weight:600}
+td.tbd{color:var(--red);font-family:var(--mono);font-size:.82rem}
+@media (max-width:460px){th,td{padding:8px 6px;font-size:.84rem}}
+.note{font-size:.88rem;color:var(--muted)}
+pre{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px;overflow-x:auto;font:400 .8rem/1.5 var(--mono);color:var(--ink)}
+.bibhead{display:flex;justify-content:space-between;align-items:center;gap:12px}
+button{font:600 .85rem var(--display);background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
+.term{font-family:var(--mono);font-size:.85em}
+@media (prefers-reduced-motion: reduce){video{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="col">
+  <span class="venue">CoRL 2026 · Late-Breaking Results · Real2Sim2Real</span>
+  <h1>Prompt-to-Radar<span class="sub">A Generative Radar World Model for Real2Sim2Real Robot Navigation</span></h1>
+  <div class="authors"><a href="https://anuvabsen.com">Anuvab Sen</a> &nbsp;·&nbsp; Saibal Mukhopadhyay</div>
+  <div class="aff">GREEN Lab, School of Electrical and Computer Engineering, Georgia Institute of Technology</div>
+  <div class="links">
+    <span class="btn todo" aria-disabled="true">Paper (coming soon)</span>
+    <span class="btn todo" aria-disabled="true">Live Radar Studio (coming soon)</span>
+    <a class="btn ghost" href="/demos/">All demos</a>
+    <a class="btn ghost" href="#real2sim2real">Real2Sim2Real on LoCoBot</a>
+  </div>
+</header>
+
+<section class="section" id="demo">
+  <figure>
+    <video src="media/media1.mp4" poster="media/media1.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
+    <figcaption>Radar Studio, end to end. A prompt (“busy intersection with pedestrians at night”, then “highway with trucks in the rain”) becomes generated scenes; each scene is ray-traced into radar, and SSMRadNet detects objects from that radar. Part two runs an uploaded city drive through the same chain. Loading screens are sped up.</figcaption>
+  </figure>
+  <p class="col tldr">Robots rarely learn from radar because real radar is expensive to record, hard to label, and tied to one sensor. Prompt-to-Radar predicts what a specific radar would measure in any scene and from any robot pose, so a robot can train its radar perception in a world model and take it back to the real world.</p>
+</section>
+
+<section class="section">
+  <div class="col">
+    <span class="eyebrow">Abstract</span>
+    <p>Radar works in darkness, rain and glare, yet robots rarely learn from it. We present a generative radar world model that predicts what a specific radar would measure in any scene and from any robot pose. Scenes come from a video diffusion model trained on four driving datasets (nuScenes, Waymo Open, Argoverse 2 and BDD100K), a real video, or a robot's own map. They are ray-traced, passed through a circuit-level receive chain with an adaptive analog front end, and perceived by a state-space detector, SSMRadNet, that outputs obstacles, closing speeds and tracks. Cached ray tracing makes frames re-run 33–141× faster, so the radar hardware itself becomes a knob. As a late-breaking result we close the Real2Sim2Real loop on a LoCoBot: corridors the robot maps are rebuilt in the world model, 77&nbsp;GHz radar rendered there trains perception for navigation, and the stack is deployed back on the physical robot.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="col">
+    <span class="eyebrow">Method</span>
+    <h2>Five stages, from a sentence to a planner input</h2>
+    <p>Each stage is a module with its own knobs. Ray tracing runs once per scene and is cached; everything after it runs live on every frame.</p>
+  </div>
+  <div class="pipe">
+    <div class="stage">
+      <span class="n">1 · GENERATE</span><h3>Scene</h3>
+      <video src="media/image28.mp4" poster="media/image28.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <p>A latent video diffusion transformer turns a prompt into driving scenes, or a drive video or robot map is used directly. Objects are lifted to a 3D layout.</p>
+    </div>
+    <div class="stage">
+      <span class="n">2 · SIMULATE</span><h3>Ray-traced radar</h3>
+      <video src="media/image10.mp4" poster="media/image10.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <p>Sionna RT traces every echo from real geometry and radio materials; an FMCW or OFDM waveform, RF front end and 12-bit ADC run on top.</p>
+    </div>
+    <div class="stage">
+      <span class="n">3 · ADAPT</span><h3>Analog front end</h3>
+      <video src="media/image11.mp4" poster="media/image11.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <p>The channel is low-rank, so an analog combiner sends 16 antennas to 12 ADCs along a rank-4 subspace tracked by AdaOja.</p>
+    </div>
+    <div class="stage">
+      <span class="n">4 · PERCEIVE</span><h3>SSMRadNet</h3>
+      <video src="media/image29.mp4" poster="media/image29.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <p>A sample-wise state-space detector runs on the ADC data and returns each object's class, range, azimuth and radial velocity.</p>
+    </div>
+    <div class="stage nav">
+      <span class="n">5 · NAVIGATE</span><h3>Planner input</h3>
+      <video src="media/image30.mp4" poster="media/image30.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <p>Detections link into tracks: free space ahead, closing speed for braking and gap decisions, and obstacles that persist.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="col">
+    <span class="eyebrow">Generated and real scenes</span>
+    <h2>The boxes come from radar, not the camera</h2>
+    <p>Both inputs below run through the same chain. The camera view is only for display: SSMRadNet sees simulated radar and its detections are projected back onto the video.</p>
+  </div>
+  <div class="grid2">
+    <figure>
+      <video src="media/image26.mp4" poster="media/image26.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Prompt: “busy intersection with pedestrians at night”, a scene the generator produced.</figcaption>
+    </figure>
+    <figure>
+      <video src="media/image6.mp4" poster="media/image6.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>The same scene after ray tracing and the receive chain, with SSMRadNet's 3D boxes.</figcaption>
+    </figure>
+    <figure>
+      <video src="media/image27.mp4" poster="media/image27.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Input: a 20&nbsp;s Kraków city drive from the internet, uploaded to the studio.</figcaption>
+    </figure>
+    <figure>
+      <video src="media/image7.mp4" poster="media/image7.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Output: vehicles as 3D boxes and people as poses, all detected from simulated radar.</figcaption>
+    </figure>
+  </div>
+  <figure>
+    <video src="media/media2.mp4" poster="media/media2.jpg" autoplay muted loop playsinline controls preload="metadata"></video>
+    <figcaption>The full Kraków drive, input and radar-derived detections.</figcaption>
+  </figure>
+</section>
+
+<section class="section" id="real2sim2real">
+  <div class="col">
+    <span class="eyebrow">Late-breaking result</span>
+    <h2>Real2Sim2Real on a LoCoBot</h2>
+    <p>The robot carries a radar, 2D LiDAR, RGB-D and stereo cameras and an edge processor. We bring its own corridors into the world model, train there with exact labels, and deploy back on the robot.</p>
+  </div>
+  <div class="grid3">
+    <figure>
+      <video src="media/image36.mp4" poster="media/image36.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Real corridor runs, every sensor recorded in sync.</figcaption>
+    </figure>
+    <figure>
+      <video src="media/image37.mp4" poster="media/image37.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Live occupancy map, point cloud and robot pose.</figcaption>
+    </figure>
+    <figure>
+      <video src="media/image38.mp4" poster="media/image38.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Camera and the robot's Doppler–angle map.</figcaption>
+    </figure>
+  </div>
+  <div class="loop">
+    <div class="step real"><span class="tag">Real</span><h3>Collect and map</h3><p>Drive the corridors, record all sensors, and build an occupancy map with pose.</p></div>
+    <div class="step sim"><span class="tag">Sim</span><h3>Rebuild and train</h3><p>Rebuild the map as a 3D scene, render 77&nbsp;GHz radar along recorded and new trajectories with moved obstacles, and train SSMRadNet with exact labels.</p></div>
+    <div class="step real"><span class="tag">Real</span><h3>Deploy and navigate</h3><p>Run the trained stack on the robot's edge processor and navigate seen and unseen corridors.</p></div>
+  </div>
+  <div class="col">
+    <div class="tablewrap">
+      <table>
+        <caption class="note" style="caption-side:bottom;text-align:left;padding-top:8px">Real-robot navigation. Numbers are being added; see the paper for the final values.</caption>
+        <thead><tr><th>Perception trained on</th><th>Success ↑</th><th>Collisions ↓</th></tr></thead>
+        <tbody>
+          <tr><td>Real robot radar only</td><td class="tbd">TBA</td><td class="tbd">TBA</td></tr>
+          <tr><td>World model (Real2Sim)</td><td class="tbd">TBA</td><td class="tbd">TBA</td></tr>
+          <tr><td>World model + real</td><td class="tbd">TBA</td><td class="tbd">TBA</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="col">
+    <span class="eyebrow">Hardware as a knob</span>
+    <h2>Change the radar before you build it</h2>
+    <p>Because only ray tracing is cached, the receive chain can be re-run on the same scene with different hardware. Lowering receiver bias here shows exactly what each milliwatt costs in the radar image.</p>
+  </div>
+  <div class="grid2">
+    <figure>
+      <video src="media/image20.mp4" poster="media/image20.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>Every receiver stage turned down: 31.7 → 5.6&nbsp;mW, and the image noise floor rises 18.5&nbsp;dB. Starving only the first amplifier gives +11.9&nbsp;dB; Friis' formula predicts +12.0&nbsp;dB.</figcaption>
+    </figure>
+    <figure>
+      <video src="media/image15.mp4" poster="media/image15.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption>The waveform is a parameter too: one OFDM burst senses the street and carries 16-QAM data, with 0 errors in 1.575&nbsp;M bits.</figcaption>
+    </figure>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>3.0 M</b><span>ray-traced paths over 2,070 scenes, 18&nbsp;GB of channel data</span></div>
+    <div class="stat"><b>33–141×</b><span>cheaper to re-run a frame than to re-trace it (0.7–2.2&nbsp;s vs 74–96&nbsp;s)</span></div>
+    <div class="stat"><b>−59%</b><span>receiver power from a 16× lower LO drive, for 0.04&nbsp;dB of contrast</span></div>
+    <div class="stat"><b>2.04 bits</b><span>per weight for a binary analog feature extractor</span></div>
+  </div>
+</section>
+
+<section class="section" id="bibtex">
+  <div class="col" style="gap:10px">
+    <div class="bibhead"><h2>BibTeX</h2><button id="copybib" type="button">Copy</button></div>
+    <pre id="bib">@inproceedings{sen2026prompt2radar,
+  title     = {Prompt-to-Radar: A Generative Radar World Model
+               for Real2Sim2Real Robot Navigation},
+  author    = {Sen, Anuvab and Mukhopadhyay, Saibal},
+  booktitle = {Conference on Robot Learning (CoRL),
+               Late-Breaking Results},
+  year      = {2026}
+}</pre>
+  </div>
+</section>
+
+<footer class="col">Built on SSMRadNet (WACV 2026) and RAVEN (CVPR 2026). Ray tracing with Sionna RT. Contact: <span class="term">asen74@gatech.edu</span></footer>
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('copybib'), pre=document.getElementById('bib');
+  b.addEventListener('click',function(){
+    var t=pre.textContent;
+    function sel(){var r=document.createRange();r.selectNodeContents(pre);var s=window.getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected — press Ctrl/⌘C';}
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)},sel);}catch(e){sel();}
+  });
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.querySelectorAll('video[autoplay]').forEach(function(v){v.removeAttribute('autoplay');v.pause();v.controls=true;});
+  }
+})();
+</script>
+</body>
+</html>
