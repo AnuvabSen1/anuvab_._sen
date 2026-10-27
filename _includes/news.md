@@ -4,6 +4,35 @@
 
   <ul>
 
+  <li><strong>[Oct. 2026]</strong> 🤖 Released the project page for 
+      <a href="./demos/prompt-to-radar/"><em>Prompt-to-Radar: A Generative Radar World Model for Real2Sim2Real Robot Navigation</em></a>, 
+      submitted to the <strong>CoRL 2026 Late-Breaking Results</strong> track.
+    </li>
+
+  <li><strong>[Oct. 2026]</strong> 🏆 Won the <strong>Best Demo Award</strong> at the CogniSense Annual Review for closed-loop radar perception and navigation on a LoCoBot.
+    </li>
+
+  <li><strong>[Sep. 2026]</strong> 🎉 Our paper 
+      <em>RaEvFuse: Cross-Modal Event Priors for High-Speed Sub-Frame Radar Detection</em> is accepted at 
+      <a href="https://neurips.cc/"><strong>NeurIPS 2026</strong></a>.
+    </li>
+
+  <li><strong>[Sep. 2026]</strong> 🎤 Presented 
+      <a href="https://arxiv.org/abs/2607.21836"><em>SSP-QST: Spectral Subspace Purification for Photonic Quantum State Tomography</em></a> at 
+      <a href="https://qce.quantum.ieee.org/"><strong>IEEE Quantum Week (QCE 2026)</strong></a>, Toronto.
+    </li>
+
+  <li><strong>[Jul. 2026]</strong> 🏅 Received the <strong>ICML 2026 Golden Reviewer Award</strong>.
+    </li>
+
+  <li><strong>[Jun. 2026]</strong> 🎤 Presented <em>RAVEN</em> as a <strong>Highlight (~Top 1%)</strong> at 
+      <a href="https://cvpr.thecvf.com/">CVPR 2026</a>, Denver, and received the <strong>CVPR Broadening Participation Award</strong>.
+    </li>
+
+  <li><strong>[Mar. 2026]</strong> 🎤 Oral talk, <em>Adaptive Hierarchical State-Space Models for Edge Sensing and Perception</em>, at 
+      <strong>GOMACTech 2026</strong>.
+    </li>
+
   <li><strong>[Mar. 2026]</strong> 🎤 <strong>Oral Presentation</strong> of 
       <em>SSMRadNet</em> at 
       <a href="https://wacv.thecvf.com/">WACV 2026</a>, Tucson, Arizona.
@@ -11,7 +40,7 @@
 
   <li><strong>[Feb. 2026]</strong> 🎉 Our paper 
       <em>RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation</em> is accepted at 
-      <a href="https://cvpr.thecvf.com/"><strong>CVPR 2026</strong></a>, Denver!
+      <a href="https://cvpr.thecvf.com/"><strong>CVPR 2026</strong></a>, Denver, as a <strong>Highlight (~Top 1%)</strong>!
     </li>
 
   <li><strong>[Oct. 2025]</strong> Our paper 

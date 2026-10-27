@@ -5,7 +5,13 @@ main:
     conference_short: CVPR
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
     image: "raven_cvpr.jpg"
-    notes: Accepted
+    notes: Highlight (~Top 1%)
+
+  - title: "RaEvFuse: Cross-Modal Event Priors for High-Speed Sub-Frame Radar Detection"
+    authors: Mir Sayeed Mohammad, <strong>Anuvab Sen</strong>, Uday Kamal, Jinhyeok Park, Saibal Mukhopadhyay
+    conference_short: NeurIPS
+    conference: Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2026.
+    image: "raevfuse_neurips.jpg"
 
   - title: "SSMRadNet: A Sample-wise State-Space Framework for Efficient and Ultra-Light Radar Segmentation and Object Detection"
     authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
@@ -19,6 +25,13 @@ main:
     conference_short: IEEE TRS
     conference: <strong>IEEE Transactions on Radar Systems</strong>, 2025.
     image: "chirpnet_trs.jpg"
+
+  - title: "SSP-QST: Spectral Subspace Purification for Photonic Quantum State Tomography"
+    authors: <strong>Anuvab Sen</strong>, Saibal Mukhopadhyay
+    conference_short: IEEE QCE
+    conference: IEEE International Conference on Quantum Computing and Engineering <strong>(QCE)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2607.21836
+    image: "sspqst_qce.jpg"
 
   - title: "Benchmarking metaheuristic-integrated qaoa against quantum annealing"
     authors: Arul Rhik Mazumder, <strong>Anuvab Sen</strong>, Udayon Sen

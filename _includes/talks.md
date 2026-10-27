@@ -161,15 +161,15 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
 <!-- Stats -->
 <div class="talk-stats">
   <div class="talk-stat">
-    <div class="talk-stat-num">2</div>
-    <div class="talk-stat-label">Oral Presentations</div>
+    <div class="talk-stat-num">4</div>
+    <div class="talk-stat-label">Oral Talks</div>
   </div>
   <div class="talk-stat">
     <div class="talk-stat-num">1</div>
-    <div class="talk-stat-label">Invited Talk</div>
+    <div class="talk-stat-label">CVPR Highlight</div>
   </div>
   <div class="talk-stat">
-    <div class="talk-stat-num">4</div>
+    <div class="talk-stat-num">5</div>
     <div class="talk-stat-label">Countries</div>
   </div>
 </div>
@@ -179,10 +179,52 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
 <!-- 2026 -->
 <div class="talk-year-label">2026</div>
 
-<!-- RAVEN CVPR 2026 - UPCOMING -->
+<!-- QCE 2026 -->
 <div class="talk-card">
-  <div class="talk-card-header oral" style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-bottom: 2px solid #22c55e;">
-    <span class="talk-type-badge oral" style="background: #22c55e;">📌 Upcoming</span>
+  <div class="talk-card-header oral">
+    <span class="talk-type-badge oral">🎤 Talk</span>
+    <div class="talk-title-text">SSP-QST: Spectral Subspace Purification for Photonic Quantum State Tomography</div>
+  </div>
+  <div class="talk-card-body">
+    <div class="talk-venue-row">
+      <div class="talk-venue-icon conf">🏛️</div>
+      <div class="talk-venue-info">
+        <div class="talk-venue-name">IEEE Quantum Week (QCE 2026)</div>
+        <div class="talk-venue-detail">IEEE International Conference on Quantum Computing and Engineering</div>
+      </div>
+      <div class="talk-venue-loc">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Toronto, Canada · Sep 2026
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CogniSense lightning -->
+<div class="talk-card">
+  <div class="talk-card-header invited">
+    <span class="talk-type-badge invited">⚡ Lightning Talk</span>
+    <div class="talk-title-text">High-Speed Sub-Frame Radar Detection with Cross-Modal Event Prior Fusion</div>
+  </div>
+  <div class="talk-card-body">
+    <div class="talk-venue-row">
+      <div class="talk-venue-icon conf">🏛️</div>
+      <div class="talk-venue-info">
+        <div class="talk-venue-name">CogniSense Annual Review (SRC JUMP 2.0)</div>
+        <div class="talk-venue-detail">Center review; Best Demo Award for the LoCoBot closed-loop demo</div>
+      </div>
+      <div class="talk-venue-loc">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        2026
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RAVEN CVPR 2026 -->
+<div class="talk-card">
+  <div class="talk-card-header oral">
+    <span class="talk-type-badge oral">⭐ Highlight</span>
     <div class="talk-title-text">RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation</div>
   </div>
   <div class="talk-card-body">
@@ -190,11 +232,32 @@ body.dark-mode .talk-year-label::after { background: linear-gradient(90deg, rgba
       <div class="talk-venue-icon conf">🏛️</div>
       <div class="talk-venue-info">
         <div class="talk-venue-name">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)</div>
-        <div class="talk-venue-detail">Top-tier computer vision conference</div>
+        <div class="talk-venue-detail">Highlight paper (~Top 1%)</div>
       </div>
       <div class="talk-venue-loc">
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         Denver, Colorado · Jun 2026
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GOMACTech 2026 -->
+<div class="talk-card">
+  <div class="talk-card-header oral">
+    <span class="talk-type-badge oral">🎤 Oral</span>
+    <div class="talk-title-text">Adaptive Hierarchical State-Space Models for Edge Sensing and Perception</div>
+  </div>
+  <div class="talk-card-body">
+    <div class="talk-venue-row">
+      <div class="talk-venue-icon conf">🏛️</div>
+      <div class="talk-venue-info">
+        <div class="talk-venue-name">GOMACTech 2026</div>
+        <div class="talk-venue-detail">Government Microcircuit Applications and Critical Technology Conference</div>
+      </div>
+      <div class="talk-venue-loc">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Mar 2026
       </div>
     </div>
   </div>
