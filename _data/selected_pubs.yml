@@ -5,6 +5,7 @@ main:
     conference_short: CVPR
     badge_class: cvpr
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
+    pdf: https://openaccess.thecvf.com/content/CVPR2026/html/Sen_RAVEN_Radar_Adaptive_Vision_Encoders_for_Efficient_Chirp-wise_Object_Detection_CVPR_2026_paper.html
     notes: Highlight (~Top 1%)
 
   - title: "RaEvFuse: Cross-Modal Event Priors for High-Speed Sub-Frame Radar Detection"
@@ -13,11 +14,18 @@ main:
     badge_class: neurips
     conference: Conference on Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2026.
 
+  - title: "Learning the Radar Front-End: Frequency-Selective State-Space Models for Multi-Task Perception"
+    authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
+    conference_short: WACV
+    badge_class: wacv
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2027.
+
   - title: "SSMRadNet: A Sample-wise State-Space Framework for Efficient and Ultra-Light Radar Segmentation and Object Detection"
     authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
     conference_short: WACV
     badge_class: wacv
     conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2511.08769
     notes: Oral, First Round (~6%)
 
   - title: "Towards Efficient and Robust Sequential Chirp-based Data-Driven Radar Processing for Object Detection"

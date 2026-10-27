@@ -1,6 +1,6 @@
 # Basic Information 
 title: Anuvab Sen
-position: PhD Candidate
+position: PhD Student
 affiliation: Georgia Institute of Technology
 affiliation_link: https://www.gatech.edu/
 affiliation_logo: ./assets/img/Georgia_Tech.png
@@ -9,7 +9,7 @@ email: asen74 (at) gatech.edu
 # Search Engine Optimization (SEO)
 keywords: anuvab sen, sen anuvab, anuvabsen, anuvab sen georgia tech, anuvab sen gatech, anuvab sen phd, anuvab sen CVPR, anuvab sen WACV, anuvab sen radar, anuvab sen computer vision, anuvab sen machine learning, multimodal perception, state space models, sensor fusion, efficient machine learning, autonomous perception, CVPR 2026, WACV 2026, SSMRadNet, RAVEN radar, quantum sensing, Georgia Institute of Technology ECE
 canonical: https://anuvabsen.com
-description: Anuvab Sen is a Ph.D. Candidate in the School of Electrical and Computer Engineering at the Georgia Institute of Technology in Atlanta, advised by Dr. Saibal Mukhopadhyay. His research focuses on building efficient perception systems for autonomous agents, multimodal sensor fusion, state-space models, and quantum sensing.
+description: Anuvab Sen is a Ph.D. Student in the School of Electrical and Computer Engineering at the Georgia Institute of Technology in Atlanta, advised by Dr. Saibal Mukhopadhyay. His research focuses on building efficient perception systems for autonomous agents, multimodal sensor fusion, state-space models, and quantum sensing.
 
 # The option is used to enable the Illinois template.
 enable_hopkins_logo: true

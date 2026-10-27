@@ -1,9 +1,23 @@
 main:
 
+  - title: "Learning the Radar Front-End: Frequency-Selective State-Space Models for Multi-Task Perception"
+    authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
+    conference_short: WACV
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2027.
+    image: "fssm_wacv27.jpg"
+
+  - title: "Temporally Ordered Region-Token Mamba with Logit-Space Diffusion for Remote Sensing Change Detection"
+    authors: <strong>Anuvab Sen</strong>, Maneet Chatterjee, Aparup Ghosh, Udayon Sen, Arnav Aditya, Yixin Zhang
+    conference_short: WACV
+    conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2027.
+    pdf: https://arxiv.org/abs/2609.27149
+    image: "bmdcd_wacv27.jpg"
+
   - title: "RAVEN: Radar Adaptive Vision Encoders for Efficient Chirp-wise Object Detection and Segmentation"
     authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
     conference_short: CVPR
     conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2026.
+    pdf: https://openaccess.thecvf.com/content/CVPR2026/html/Sen_RAVEN_Radar_Adaptive_Vision_Encoders_for_Efficient_Chirp-wise_Object_Detection_CVPR_2026_paper.html
     image: "raven_cvpr.jpg"
     notes: Highlight (~Top 1%)
 
@@ -17,6 +31,7 @@ main:
     authors: <strong>Anuvab Sen</strong>, Mir Sayeed Mohammad, Saibal Mukhopadhyay
     conference_short: WACV
     conference: IEEE/CVF Winter Conference on Applications of Computer Vision <strong>(WACV)</strong>, 2026.
+    pdf: https://arxiv.org/abs/2511.08769
     image: "ssmradnet_wacv.jpg"
     notes: Oral, First Round (~6%)
 

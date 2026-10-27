@@ -4,6 +4,12 @@
 
   <ul>
 
+  <li><strong>[Oct. 2026]</strong> 🎉 Two papers accepted at 
+      <a href="https://wacv.thecvf.com/"><strong>WACV 2027</strong></a>: 
+      <em>Learning the Radar Front-End: Frequency-Selective State-Space Models for Multi-Task Perception</em> and 
+      <a href="https://arxiv.org/abs/2609.27149"><em>Temporally Ordered Region-Token Mamba with Logit-Space Diffusion for Remote Sensing Change Detection</em></a>.
+    </li>
+
   <li><strong>[Oct. 2026]</strong> 🤖 Released the project page for 
       <a href="./demos/prompt-to-radar/"><em>Prompt-to-Radar: A Generative Radar World Model for Real2Sim2Real Robot Navigation</em></a>, 
       submitted to the <strong>CoRL 2026 Late-Breaking Results</strong> track.
